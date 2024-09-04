@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Portfolio Gabriele Massimiani</h1>
+        Portfolio Gabriele Massimiani
       </div>
     </>
   )
