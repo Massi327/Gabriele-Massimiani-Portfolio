@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1>Gabriele Massimiani Portfolio</h1>
+      <div>Gabriele Massimiani Portfolio</div>
     </>
   )
 }
