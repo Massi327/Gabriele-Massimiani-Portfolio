@@ -1,8 +1,7 @@
 :root {
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   --dark: #242424;
 }
 
@@ -12,9 +11,25 @@
 
 .navbar {
   background-color: var(--dark);
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1030;
+  max-width: 1500px;
+}
+
+.navbar .container {
+  max-width: 1500px;
+}
+
+.navlink {
+  color: white;
+  font-size: 20px;
 }
 
 .home {
   background-color: var(--dark);
   color: white;
+  max-width: 1500px;
 }
+

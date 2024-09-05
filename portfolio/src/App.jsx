@@ -9,10 +9,25 @@ function App() {
   return (
     <>
       <Header/>
-      <Container fluid className="home">
-        <Row>
+      <Container className="home">
+        <Row className='section m-5'>
           <Col>
           <h1>Home</h1>
+          </Col>
+        </Row>
+        <Row className='section m-5'>
+          <Col>
+          <h1 id='about'>About</h1>
+          </Col>
+        </Row>
+        <Row className='section m-5'>
+          <Col>
+          <h1 id='projects'>Projects</h1>
+          </Col>
+        </Row>
+        <Row className='section m-5'>
+          <Col>
+          <h1 id='contact'>Contact</h1>
           </Col>
         </Row>
       </Container>
