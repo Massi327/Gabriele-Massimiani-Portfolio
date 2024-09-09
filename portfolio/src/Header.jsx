@@ -1,7 +1,25 @@
+import { useEffect } from 'react';
 import { Container, Navbar, Nav } from "react-bootstrap";
 import './App.css'
 
 export default function Header() {
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Navbar className="navbar" data-bs-theme='dark'>
         <Container>
