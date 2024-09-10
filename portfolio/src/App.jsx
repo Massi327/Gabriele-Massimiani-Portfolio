@@ -9,9 +9,9 @@ function App() {
     <>
       <Header/>
       <Container className="home">
-        <Row className='section m-5 pt-2'>
+        <Row className='section m-5 pt-4'>
           <Col>
-          <h1>Hi, I'm Gabriele Massimiani!</h1>
+          <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
           <p className='p'>
             During my years at the Politecnico di
             Torino I was able to combine both

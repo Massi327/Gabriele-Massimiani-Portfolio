@@ -1,18 +1,24 @@
 :root {
-  margin: 0 auto;
   --dark: #242424;
-  --scrolled: #ffffff;
-  --navlink-color: white;
+  --red: #FF2B2B;
+  --secondary: #BEA6A1;
+  --text: #F0F3EA;
+  --scrolled: var(--red);
+  --navlink-color: var(--text);
   --navlink-scrolled-color: var(--dark);
-  --navbrand-color: white;
+  --navbrand-color: var(--text);
   --navbrand-scrolled-color: var(--dark);
+}
+
+.red-text {
+  color: var(--red);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--dark); /* Applica il colore di sfondo a tutta la pagina */
-  color: white; /* Imposta il colore del testo a bianco per contrastare con lo sfondo scuro */
+  background-color: var(--dark); 
+  color: var(--text); 
 }
 
 .navbar {
@@ -26,7 +32,6 @@ body {
 
 .navbar.scrolled {
   background-color: var(--scrolled);
-  color: var(--dark);
 }
 
 .navbar .container {
