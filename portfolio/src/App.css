@@ -1,13 +1,19 @@
 :root {
-  --dark: #242424;
-  --red: #FF2B2B;
-  --secondary: #BEA6A1;
-  --text: #F0F3EA;
+  --dark: #101419;
+  --red: #D81919;
+  --secondary: #79745C;
+  --text: #E1E2D0;
   --scrolled: var(--red);
   --navlink-color: var(--text);
   --navlink-scrolled-color: var(--dark);
   --navbrand-color: var(--text);
+  --navbrand-hover-color: var(--red);
+  --navbrand-hover-scrolled-color: var(--text);
   --navbrand-scrolled-color: var(--dark);
+  --navlink-hover-color: var(--red);
+  --navlink-hover-scrolled-color: var(--text);
+  --footer-bg: var(--dark);
+  --footer-text: var(--text);
 }
 
 .red-text {
@@ -49,6 +55,14 @@ body {
   transition: color 0.3s;
 }
 
+.navlink:hover {
+  color: var(--navlink-hover-color); 
+}
+
+.navbar.scrolled .navlink:hover {
+  color: var(--navlink-hover-scrolled-color);
+}
+
 .navbar.scrolled .navlink {
   color: var(--navlink-scrolled-color);
 }
@@ -58,17 +72,34 @@ body {
   transition: color 0.3s;
 }
 
+.navbar-brand:hover {
+  color: var(--navbrand-hover-color);
+}
+
 .navbar.scrolled .navbar-brand {
   color: var(--navbrand-scrolled-color);
+}
+
+.navbar.scrolled .navbar-brand:hover {
+  color: var(--navbrand-hover-scrolled-color);
 }
 
 .home {
   max-width: 1500px;
   background-color: var(--dark);
-  color: white;
+  color: --var(text);
 }
 
 .p {
   font-size: larger;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
 }
 

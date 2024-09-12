@@ -119,6 +119,9 @@ function App() {
         </Row>
       </Container>
       
+      <footer className='footer'>
+        <p>© 2024 Gabriele Massimiani. All rights reserved.</p>
+      </footer>
     </>
   )
 }
