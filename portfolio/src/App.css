@@ -1,17 +1,17 @@
 :root {
   --dark: #101419;
   --red: #D81919;
-  --secondary: #79745C;
+  --secondary: #28323e;
   --text: #E1E2D0;
   --scrolled: var(--red);
   --navlink-color: var(--text);
-  --navlink-scrolled-color: var(--dark);
+  --navlink-scrolled-color: var(--text);
+  --navlink-hover-color: var(--red);
+  --navlink-hover-scrolled-color: var(--dark);
   --navbrand-color: var(--text);
   --navbrand-hover-color: var(--red);
-  --navbrand-hover-scrolled-color: var(--text);
-  --navbrand-scrolled-color: var(--dark);
-  --navlink-hover-color: var(--red);
-  --navlink-hover-scrolled-color: var(--text);
+  --navbrand-scrolled-color: var(--text);
+  --navbrand-hover-scrolled-color: var(--dark);
   --footer-bg: var(--dark);
   --footer-text: var(--text);
 }
@@ -61,6 +61,7 @@ body {
 
 .navbar.scrolled .navlink:hover {
   color: var(--navlink-hover-scrolled-color);
+  
 }
 
 .navbar.scrolled .navlink {
@@ -103,3 +104,35 @@ body {
   padding: 1rem 0;
 }
 
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 30px var(--text);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--text);
+  }
+  100% {
+    box-shadow: 0 0 30px var(--text);
+  }
+}
+
+.card {
+  width: 18rem;
+  border: var(--text) 2px solid;
+  background-color: var(--secondary);
+  color: var(--text);
+  box-shadow: 0 0 30px var(--text);
+  
+}
+
+.card:hover {
+  animation: shadowPulse 3s infinite;
+}
+
+.card-img-small {
+  width: 250px; 
+  height: auto; 
+  display: block;
+  margin: 1rem auto;
+  border-radius: 2%;
+}
