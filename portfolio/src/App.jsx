@@ -6,6 +6,44 @@ import Card from 'react-bootstrap/Card'
 
 function App() {
 
+  const projects = [
+    {
+      title: 'Level Up Lab', 
+      img: 'src/Asset/LUL_FROG_Complete_Name.png', 
+      url: 'https://www.leveluplab.it/',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'Clownageddon - GLOBAL GAME JAM (2024)', 
+      img: 'src/Asset/Clownageddon.png', 
+      url: 'https://abstractborderstudio.itch.io/clownageddon',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'Line Spacing - FAIL/SAFE GAME JAM (2023)', 
+      img: 'src/Asset/Line Spacing.png', 
+      url: 'https://abstractborderstudio.itch.io/linespacing',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'GAME DESIGN (University Project - 2023)', 
+      img: 'src/Asset/LUL_FROG_Complete_Name.png', 
+      url: 'https://www.leveluplab.it/',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'Level Up Lab', 
+      img: 'src/Asset/LUL_FROG_Complete_Name.png', 
+      url: 'https://www.leveluplab.it/',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+
+  ]
+
+  const handleCardClick = (url) => {
+    window.location.href = url
+  }
+
   return (
     <>
       <Header/>
@@ -39,17 +77,19 @@ function App() {
         </Row>
 
         <Row className='section m-5'>
-          <Col>
-          <Card className='card'>
-            <Card.Img variant="top" src="src/Asset/LUL_FROG_Complete_Name.png" className="card-img-small"/>
-            <Card.Body>
-              <Card.Title>Level Up Lab</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          </Col>
+          {projects.map((project, index) => (
+            <Col key={index}>
+              <Card className='card' onClick={() => handleCardClick(project.url)}>
+                <Card.Img variant="top" src={project.img} className="card-img-small"/>
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>
+                    {project.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
 
         <Row className='section m-5'>
