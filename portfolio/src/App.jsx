@@ -27,14 +27,32 @@ function App() {
     },
     {
       title: 'GAME DESIGN (University Project - 2023)', 
-      img: 'src/Asset/LUL_FROG_Complete_Name.png', 
-      url: 'https://www.leveluplab.it/',
+      img: 'src/Asset/Game Design.png', 
+      url: 'https://drive.google.com/drive/folders/1xQgwhUWqW5u1B2fjd0F76i_cZb1jxiJW?usp=sharing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'Level Up Lab', 
-      img: 'src/Asset/LUL_FROG_Complete_Name.png', 
-      url: 'https://www.leveluplab.it/',
+      title: 'COMPUTER GRAPHICS (University Project - 2023)', 
+      img: 'src/Asset/Computer Grafica.png', 
+      url: 'https://www.dropbox.com/sh/fjle2b7s5uz53gt/AAA4iSq1DHIa9hGZljldnr2-a?dl=0',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'COMPUTER ANIMATION (University Project - 2023)', 
+      img: 'src/Asset/Computer Animation.png', 
+      url: 'https://www.dropbox.com/sh/fjle2b7s5uz53gt/AAA4iSq1DHIa9hGZljldnr2-a?dl=0',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'VIRTUAL REALITY (University Project - 2023)', 
+      img: 'src/Asset/The Sky Postman.png', 
+      url: 'https://cutt.ly/LwvVVqop',
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      title: 'HUMAN COMPUTER INTERACTION (University Project - 2023)', 
+      img: 'src/Asset/APPy family.png', 
+      url: 'https://www.dropbox.com/scl/fi/9dpr5tni9gc4pcbblkkie/APPy-Family-Final-Group-Report.pdf?rlkey=wq0pvi7ylnhm63dlbb81n62db&dl=0',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
 
@@ -76,14 +94,14 @@ function App() {
           </Col>
         </Row>
 
-        <Row className='section m-5'>
+        <Row className='section m-5 d-flex justify-content-center'>
           {projects.map((project, index) => (
-            <Col key={index}>
+            <Col key={index} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center mb-4">
               <Card className='card' onClick={() => handleCardClick(project.url)}>
                 <Card.Img variant="top" src={project.img} className="card-img-small"/>
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>
+                  <Card.Title className='text-center'>{project.title}</Card.Title>
+                  <Card.Text className='text-center'>
                     {project.description}
                   </Card.Text>
                 </Card.Body>
