@@ -58,6 +58,24 @@ function App() {
 
   ]
 
+  const skillLogo = [
+    {src: 'src/Asset/unity-logo.png', alt: 'Unity'},
+    {src: 'src/Asset/unreal-engine-logo.png', alt: 'Unreal Engine'},
+    {src: 'src/Asset/blender-logo.png', alt: 'Blender'},
+    {src: 'src/Asset/notion-logo.png', alt: 'Notion'},
+    {src: 'src/Asset/jira-logo.png', alt: 'Jira'},
+    {src: 'src/Asset/javascript-logo.svg', alt: 'Javascript'},
+    {src: 'src/Asset/adobe-logo.svg', alt: 'Adobe'},
+    {src: 'src/Asset/bootstrap-logo.svg', alt: 'Bootstrap'},
+    {src: 'src/Asset/c-logo.svg', alt: 'C'},
+    {src: 'src/Asset/cs-logo.svg', alt: 'C#'},
+    {src: 'src/Asset/css-logo.svg', alt: 'CSS'},
+    {src: 'src/Asset/html-logo.svg', alt: 'HTML'},
+    {src: 'src/Asset/Microsoft-logo.svg', alt: 'Microsoft'},
+    {src: 'src/Asset/react-logo.svg', alt: 'React'},
+    {src: 'src/Asset/sqlite-logo.svg', alt: 'Sqlite'},
+  ]
+
   const handleCardClick = (url) => {
     window.location.href = url
   }
@@ -77,6 +95,9 @@ function App() {
           
           <h2>Skills & Tools</h2>
           <p className='p'>Blender, Unity, Unreal Engine, Notion, Jira, Suite Microsoft, Suite Adobe, Java, Javascript (React), HTML, C#, C, SQL</p>
+          {skillLogo.map((skillLogo, index) => (
+            <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+          ))}
           </Col>
         </Row>
 

@@ -162,3 +162,9 @@ body {
   margin: 1rem auto;
   border-radius: 2%;
 }
+
+.skill-logo {
+  width: 50px; /* Imposta la larghezza desiderata */
+  height: 50px; /* Imposta l'altezza desiderata */
+  margin-right: 0.5rem; /* Aggiunge uno spazio tra le icone */
+}
