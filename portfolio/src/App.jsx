@@ -110,13 +110,20 @@ function App() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_g1slgjl', 'template_b9yxd2l', form.current, 'g0PB8tvxmBZGw6Cqk')
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+    console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+    console.log(process.env.REACT_APP_EMAILJS_YOUR_USER_ID);
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+      form.current, 
+      process.env.REACT_APP_EMAILJS_YOUR_USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+    form.current.reset();
   };
 
   return (
