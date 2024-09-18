@@ -196,7 +196,7 @@ function App() {
       <footer className='footer'>
         <div className="footer-content">
           <a href='https://www.linkedin.com/in/gabriele-massimiani/'>
-          <img src='public/Asset/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
+          <img src='/Asset/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
           LinkedIn
           </a>
           <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
