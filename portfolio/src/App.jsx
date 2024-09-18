@@ -1,8 +1,10 @@
+import React, { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './App.css'
 import Header from './Header'
 import Card from 'react-bootstrap/Card'
+import emailjs from 'emailjs-com';
 
 function App() {
 
@@ -14,43 +16,68 @@ function App() {
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'Clownageddon - GLOBAL GAME JAM (2024)', 
+      title: (
+      <>
+        Clownageddon <br/>
+        GLOBAL GAME JAM (2024)
+      </>
+    ), 
       img: 'src/Asset/Clownageddon.png', 
       url: 'https://abstractborderstudio.itch.io/clownageddon',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'Line Spacing - FAIL/SAFE GAME JAM (2023)', 
+      title: (
+        <>
+        Line Spacing <br/> 
+        FAIL/SAFE GAME JAM
+        </>
+    ), 
       img: 'src/Asset/Line Spacing.png', 
       url: 'https://abstractborderstudio.itch.io/linespacing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'GAME DESIGN (University Project - 2023)', 
+      title: (
+        <>
+        Game Design <br/> 
+        (University Project - 2023)
+        </>
+      ), 
       img: 'src/Asset/Game Design.png', 
       url: 'https://drive.google.com/drive/folders/1xQgwhUWqW5u1B2fjd0F76i_cZb1jxiJW?usp=sharing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'COMPUTER GRAPHICS (University Project - 2023)', 
+      title: 'Computer Graphics (University Project - 2023)', 
       img: 'src/Asset/Computer Grafica.png', 
       url: 'https://drive.google.com/drive/folders/1ExdxCFqfp_qRhEA5NKu8tBZz6U6Zeihh?usp=sharing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'COMPUTER ANIMATION (University Project - 2023)', 
+      title: 'Computer Animation (University Project - 2023)', 
       img: 'src/Asset/Computer Animation.png', 
       url: 'https://drive.google.com/drive/folders/1_HJ8RKqDarBg5fbkirwpYArqR78tFC_6?usp=sharing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'VIRTUAL REALITY (University Project - 2023)', 
+      title: (
+        <>
+        Virtual Reality <br/> 
+        (University Project - 2023)
+        </>
+      ),  
       img: 'src/Asset/The Sky Postman.png', 
       url: 'https://cutt.ly/LwvVVqop',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
     },
     {
-      title: 'HUMAN COMPUTER INTERACTION (University Project - 2023)', 
+      title:  (
+        <>
+        HCI <br/> 
+        (University Project - 2023)
+        </>
+      ),    
       img: 'src/Asset/APPy family.png', 
       url: 'https://drive.google.com/drive/folders/1HvJw8jJ-kHlRQ4E_pqUz4vJm_PtwBvn1?usp=sharing',
       description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
@@ -79,6 +106,18 @@ function App() {
   const handleCardClick = (url) => {
     window.location.href = url
   }
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_g1slgjl', 'template_b9yxd2l', form.current, 'g0PB8tvxmBZGw6Cqk')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <>
@@ -116,8 +155,8 @@ function App() {
               <Card className='card' onClick={() => handleCardClick(project.url)}>
                 <Card.Img variant="top" src={project.img} className="card-img-small"/>
                 <Card.Body>
-                  <Card.Title className='text-center'>{project.title}</Card.Title>
-                  <Card.Text className='text-center'>
+                  <Card.Title className='card-title'>{project.title}</Card.Title>
+                  <Card.Text className='card-text'>
                     {project.description}
                   </Card.Text>
                 </Card.Body>
@@ -130,9 +169,23 @@ function App() {
         <Row className='section m-5'>
           <Col>
           <h1 id='contact'>Contact</h1>
-          <p className='p'>
-            TODO
-          </p>
+          <Form ref={form} onSubmit={sendEmail}>
+            <Form.Group controlId="formName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" name="user_name" placeholder="Enter your name" required />
+            </Form.Group>
+            <Form.Group controlId="formEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" name="user_email" placeholder="Enter your email" required />
+            </Form.Group>
+            <Form.Group controlId="formMessage">
+              <Form.Label>Message</Form.Label>
+              <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Send
+            </Button>
+          </Form>
           </Col>
         </Row>
       </Container>

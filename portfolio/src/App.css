@@ -163,6 +163,15 @@ body {
   border-radius: 2%;
 }
 
+.card-title {
+  text-align: center;
+  margin-bottom: 30px;
+  height: 1rem;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
 .skill-logo {
   width: 75px; 
   height: 75px; 
