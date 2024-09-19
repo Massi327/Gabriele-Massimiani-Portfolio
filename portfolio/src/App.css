@@ -27,6 +27,8 @@ body {
   color: var(--text); 
 }
 
+/* NAVBAR */
+
 .navbar {
   background-color: var(--dark);
   position: fixed;
@@ -95,6 +97,8 @@ body {
   font-size: larger;
 }
 
+/* FOOTER */
+
 .footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
@@ -126,6 +130,8 @@ body {
 .footer-logo {
   height: 2rem;  
 }
+
+/* CARD */
 
 @keyframes shadowPulse {
   0% {
@@ -172,9 +178,45 @@ body {
   justify-content: center; 
 }
 
+/* SKILL */
+.skill-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  gap: 1rem; 
+  margin-bottom: 1rem;
+}
+
 .skill-logo {
-  width: 75px; 
-  height: 75px; 
-  margin-right: 0.5rem; 
+  width: 100px; 
+  height: 100px; 
   object-fit: contain;
+}
+
+/* FORM */
+.form-container {
+  background-color: var(--red); 
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-container .form-label {
+  color: var(--text); 
+  font-weight: bold;
+}
+
+.form-container .form-control {
+  background-color: var(--text); 
+  color: var(--secondary); 
+  margin-bottom: 1rem;
+}
+
+.form-container .button {
+  background-color: var(--secondary); 
+  color: var(--text);
+  border: none;
+}
+
+.form-container .button:hover {
+  background-color: var(--dark);
 }

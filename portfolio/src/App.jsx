@@ -85,19 +85,24 @@ function App() {
 
   ]
 
-  const skillLogo = [
+  const skillLogoUp = [
+    {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/unity-logo.png', alt: 'Unity'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/blender-logo.png', alt: 'Blender'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/jira-logo.png', alt: 'Jira'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/javascript-logo.svg', alt: 'Javascript'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/adobe-logo.png', alt: 'Adobe'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/bootstrap-logo.svg', alt: 'Bootstrap'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/csharp.png', alt: 'Csharp'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/css-logo.svg', alt: 'CSS'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/html-logo.svg', alt: 'HTML'},
+  ]
+
+  const skillLogoDown = [
+    {src: '/Gabriele-Massimiani-Portfolio/assets/adobe-logo.png', alt: 'Adobe'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/Microsoft-logo.svg', alt: 'Microsoft'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/react-logo.svg', alt: 'React'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/bootstrap-logo.svg', alt: 'Bootstrap'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/javascript-logo.svg', alt: 'Javascript'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/html-logo.svg', alt: 'HTML'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/css-logo.svg', alt: 'CSS'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/sqlite-logo.svg', alt: 'Sqlite'},
   ]
 
@@ -134,11 +139,17 @@ function App() {
            TODO
           </p>
           
-          <h2>Skills & Tools</h2>
-          <p className='p'>Blender, Unity, Unreal Engine, Notion, Jira, Suite Microsoft, Suite Adobe, Java, Javascript (React), HTML, C#, C, SQL</p>
-          {skillLogo.map((skillLogo, index) => (
+          <h2 className='mb-3'>Skills & Tools</h2>
+          <div className="skill-logo-container">
+          {skillLogoUp.map((skillLogo, index) => (
             <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
           ))}
+          </div>
+          <div className="skill-logo-container">
+          {skillLogoDown.map((skillLogo, index) => (
+            <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+          ))}
+          </div>
           </Col>
         </Row>
 
@@ -169,25 +180,32 @@ function App() {
         
         {/*Contacts*/}
         <Row className='section m-5'>
+        <h1 id='contact' className='mb-3'>Contact</h1>
           <Col>
-          <h1 id='contact'>Contact</h1>
-          <Form ref={form} onSubmit={sendEmail}>
+          <Form ref={form} onSubmit={sendEmail} className="form-container">
             <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" name="user_name" placeholder="Enter your name" required />
+              <Form.Label className="form-label">Name*</Form.Label>
+              <Form.Control type="text" name="user_name" placeholder="Enter your name" required className="form-control"/>
             </Form.Group>
             <Form.Group controlId="formEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" name="user_email" placeholder="Enter your email" required />
+              <Form.Label className="form-label">Email address*</Form.Label>
+              <Form.Control type="email" name="user_email" placeholder="Enter your email" required className="form-control"/>
             </Form.Group>
             <Form.Group controlId="formMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required />
+              <Form.Label className="form-label">Message*</Form.Label>
+              <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required className="form-control"/>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button type="submit" className="button">
               Send
             </Button>
           </Form>
+          </Col>
+          <Col>
+          Let's stay in touch!
+
+          Feel free to fill in the form to contact me for any information or collaboration. I will reply as soon as possible. You can also find me on LinkedIn.
+          If you want to meet and chat, you can contact me on this discord channel.
+
           </Col>
         </Row>
       </Container>
