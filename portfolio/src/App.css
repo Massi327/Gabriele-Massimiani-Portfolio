@@ -119,7 +119,7 @@ body {
 .footer a {
   text-decoration: none; 
   color: inherit; 
-  display: flex; /* Allinea l'immagine e il testo orizzontalmente */
+  display: flex; 
   align-items: center;
 }
 

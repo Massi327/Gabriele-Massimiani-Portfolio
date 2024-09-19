@@ -136,7 +136,19 @@ function App() {
           <Col>
           <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
           <p className='p'>
-           TODO
+          I am a university student at Politecnico di Torino, with a background in engineering and a passion for the gaming industry, coupled with my experience in project management and programming.
+          </p>
+          <p className='p'>
+          Through my participation in various projects, I have gained valuable experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
+          </p>
+          <p className='p'>
+          I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and am committed to delivering high-quality results while seeking continuous growth.
+          </p>
+          <p className='p'>
+          My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
+          </p>
+          <p className='p'>
+          I am excited about the opportunity to contribute to your esteemed team!
           </p>
           
           <h2 className='mb-3'>Skills & Tools</h2>
