@@ -79,6 +79,12 @@ body {
   color: var(--navbrand-hover-color);
 }
 
+.navbar-brand-logo{
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .navbar.scrolled .navbar-brand {
   color: var(--navbrand-scrolled-color);
 }

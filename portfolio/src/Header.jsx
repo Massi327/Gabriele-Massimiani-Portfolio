@@ -24,6 +24,7 @@ export default function Header() {
         <Navbar className="navbar" data-bs-theme='dark'>
         <Container>
             <a href='#' className='navbar-brand'>
+            <img alt="Logo_GM" src="/Gabriele-Massimiani-Portfolio/assets/Logo_GM.svg" className="navbar-brand-logo"/>
                 Gabriele Massimiani | Portfolio
             </a>
             
