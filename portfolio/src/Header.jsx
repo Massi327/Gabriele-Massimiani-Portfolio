@@ -29,7 +29,6 @@ export default function Header() {
             </a>
             
             <Nav className="ms-auto">
-                <Nav.Link href="#about" className="navlink">About</Nav.Link>
                 <Nav.Link href="#projects" className="navlink">Projects</Nav.Link>
                 <Nav.Link href="#contact" className="navlink">Contact</Nav.Link>
                 <Nav.Link href="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf" className="navlink">Resume</Nav.Link>
