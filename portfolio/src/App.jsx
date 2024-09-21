@@ -182,13 +182,23 @@ function App() {
             </Col>
           ))}
         </Row>
-        
+
         {/*Contacts*/}
         <Row className='section mt-5 mb-2 mx-4'>
           <h1 id='contact' className='mb-3'>Contact</h1>
         </Row>
         <Row className='section mx-5 mb-2'>
           <Col xs={12} sm={12} md={6} lg={6}>
+          <h2>Let's stay in touch!</h2>
+          <p className='p'>
+          Feel free to fill in the form to contact me for any information or collaboration. <br/> I will reply as soon as possible. 
+          </p>
+          <p className='p'>
+          You can also find me on LinkedIn:<a className='a' href='https://www.linkedin.com/in/gabriele-massimiani/'> Gabriele Massimiani</a>.
+          </p>
+          <p className='p'>
+          If you want to meet and chat, you can contact me on this discord channel: <a className='a' href='https://discord.com/invite/5M9fJyWYtE'> Level Up Lab</a>.
+          </p>
           <Form ref={form} onSubmit={sendEmail} className="form-container">
             <Form.Group controlId="formName">
               <Form.Label className="form-label">Name*</Form.Label>
@@ -208,16 +218,14 @@ function App() {
           </Form>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6}>
-          <h2>Let's stay in touch!</h2>
-          <p className='p'>
-          Feel free to fill in the form to contact me for any information or collaboration. <br/> I will reply as soon as possible. 
-          </p>
-          <p className='p'>
-          You can also find me on LinkedIn:<a className='a' href='https://www.linkedin.com/in/gabriele-massimiani/'> Gabriele Massimiani</a>.
-          </p>
-          <p className='p'>
-          If you want to meet and chat, you can contact me on this discord channel: <a className='a' href='https://discord.com/invite/5M9fJyWYtE'> Level Up Lab</a>.
-          </p>
+          
+
+          <iframe
+        src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
+        style={{ width: '100%', height: '100%' }}
+        frameBorder="0"
+        title="PDF Viewer"
+      ></iframe>
           </Col>
         </Row>
       </Container>
