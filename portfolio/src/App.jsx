@@ -7,6 +7,10 @@ import Card from 'react-bootstrap/Card'
 import emailjs from 'emailjs-com';
 import { Routes, Route, useNavigate, Outlet } from 'react-router-dom';
 import LevelUpLab from './LevelUpLab';
+import GameJam from './GameJam';
+import GameDesign from './GameDesign';
+import VirtualReality from './VirtualReality';
+import DigitalStrategy from './DigitalStrategy';
 
 function App() {
 
@@ -14,6 +18,59 @@ function App() {
   const siteBase = '/Gabriele-Massimiani-Portfolio';
 
   const projects = [
+    {
+      title: 'Level Up Lab', 
+      img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
+      url: '/LevelUpLab',
+      description: 'TODO'
+    },
+    {
+      title: (
+      <>
+        GAME JAM (2023/2024)
+      </>
+    ), 
+      img: '/Gabriele-Massimiani-Portfolio/assets/Clownageddon.png', 
+      url: '/GameJam',
+      description: 'TODO'
+    },
+    {
+      title: (
+        <>
+        Game Design <br/> 
+        (University Project - 2023)
+        </>
+      ), 
+      img: '/Gabriele-Massimiani-Portfolio/assets/Game Design.png', 
+      url: '/GameDesign',
+      description: 'TODO'
+    },
+    {
+      title: (
+        <>
+        Virtual Reality <br/> 
+        (University Project - 2023)
+        </>
+      ),  
+      img: '/Gabriele-Massimiani-Portfolio/assets/The Sky Postman.png', 
+      url: '/VirtualReality',
+      description: 'TODO'
+    },
+    {
+      title:  (
+        <>
+        Digital Strategy <br/> 
+        (University Project - 2023)
+        </>
+      ),    
+      img: '/Gabriele-Massimiani-Portfolio/assets/APPy family.png', 
+      url: '/DigitalStrategy',
+      description: 'TODO'
+    },
+
+  ]
+
+  const oldProject = [
     {
       title: 'Level Up Lab', 
       img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
@@ -87,7 +144,6 @@ function App() {
       url: 'https://drive.google.com/drive/folders/1HvJw8jJ-kHlRQ4E_pqUz4vJm_PtwBvn1?usp=sharing',
       description: 'TODO'
     },
-
   ]
 
   const skillLogoUp = [
@@ -109,8 +165,7 @@ function App() {
   ]
 
   const handleCardClick = (url) => {
-    //window.location.href = url
-    navigate(siteBase+'/LevelUpLab');
+    navigate(siteBase+url);
   }
 
   const form = useRef();
@@ -258,7 +313,10 @@ function App() {
         } />
 
         <Route path="/LevelUpLab" element={<LevelUpLab/>}/>
-      
+        <Route path="/GameJam" element={<GameJam/>}/>
+        <Route path="/GameDesign" element={<GameDesign/>}/>
+        <Route path="/VirtualReality" element={<VirtualReality/>}/>
+        <Route path="/DigitalStrategy" element={<DigitalStrategy/>}/>
       </Route>
       
     </Routes>
