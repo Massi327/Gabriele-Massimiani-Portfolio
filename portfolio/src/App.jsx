@@ -5,10 +5,13 @@ import './App.css'
 import Header from './Header'
 import Card from 'react-bootstrap/Card'
 import emailjs from 'emailjs-com';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate, Outlet } from 'react-router-dom';
 import LevelUpLab from './LevelUpLab';
 
 function App() {
+
+  const navigate = useNavigate();
+  const siteBase = '/Gabriele-Massimiani-Portfolio';
 
   const projects = [
     {
@@ -106,7 +109,8 @@ function App() {
   ]
 
   const handleCardClick = (url) => {
-    window.location.href = url
+    //window.location.href = url
+    navigate(siteBase+'/LevelUpLab');
   }
 
   const form = useRef();
@@ -131,125 +135,131 @@ function App() {
       <Route path="/" element={
         <>
         <Header/>
-        <Container className="home">
-          
-          {/*About*/}
-          <Row className='section mt-5 mx-4 pt-4'>
-            <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
-            <h2>Project Manager</h2>
-          </Row>
-          <Row className='section mx-5 pt-1'>
-            <p className='p'>
-            I am a university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
-            </p>
-            <p className='p'>
-            Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
-            </p>
-            <p className='p'>
-            I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
-            </p>
-            <p className='p'>
-            My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
-            </p>
-            <p className='p'>
-            I am excited about the opportunity to contribute to your esteemed team!
-            </p>
-            
-            <h2 className='mb-3 mt-3'>Skills & Tools</h2>
-            <div className="skill-logo-container">
-            {skillLogoUp.map((skillLogo, index) => (
-              <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
-            ))}
-            </div>
-            <div className="skill-logo-container">
-            {skillLogoDown.map((skillLogo, index) => (
-              <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
-            ))}
-            </div>
-          </Row>
-  
-          {/*Projects*/}
-          <Row className='section mt-5 mx-4'>
-            <h1 id='projects'>Projects</h1>
-          </Row>
-          <Row className='section pt-1 mb-2 mx-4 d-flex justify-content-center'>
-            {projects.map((project, index) => (
-              <Col key={index} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center mb-4">
-                <Card className='card' onClick={() => handleCardClick(project.url)}>
-                  <Card.Img variant="top" src={project.img} className="card-img-small"/>
-                  <Card.Body>
-                    <Card.Title className='card-title'>{project.title}</Card.Title>
-                    <Card.Text className='card-text'>
-                      {project.description}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-  
-          {/*Contacts*/}
-          <Row className='section mt-5 mb-2 mx-4'>
-            <h1 id='contact' className='mb-3'>Contact</h1>
-          </Row>
-          <Row className='section mx-5 mb-2'>
-            <Col xs={12} sm={12} md={6} lg={6}>
-            <h2>Let's stay in touch!</h2>
-            <p className='p'>
-            Feel free to fill in the form to contact me for any information or collaboration. <br/> I will reply as soon as possible. 
-            </p>
-            <p className='p'>
-            You can also find me on LinkedIn:<a className='a' href='https://www.linkedin.com/in/gabriele-massimiani/'> Gabriele Massimiani</a>.
-            </p>
-            <p className='p'>
-            If you want to meet and chat, you can contact me on this discord channel: <a className='a' href='https://discord.com/invite/5M9fJyWYtE'> Level Up Lab</a>.
-            </p>
-            <Form ref={form} onSubmit={sendEmail} className="form-container">
-              <Form.Group controlId="formName">
-                <Form.Label className="form-label">Name*</Form.Label>
-                <Form.Control type="text" name="user_name" placeholder="Enter your name" required className="form-control"/>
-              </Form.Group>
-              <Form.Group controlId="formEmail">
-                <Form.Label className="form-label">Email address*</Form.Label>
-                <Form.Control type="email" name="user_email" placeholder="Enter your email" required className="form-control"/>
-              </Form.Group>
-              <Form.Group controlId="formMessage">
-                <Form.Label className="form-label">Message*</Form.Label>
-                <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required className="form-control"/>
-              </Form.Group>
-              <Button type="submit" className="button">
-                Send
-              </Button>
-            </Form>
-            </Col>
-            <Col xs={12} sm={12} md={6} lg={6}>
-            
-  
-            <iframe
-          src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
-          style={{ width: '100%', height: '100%' }}
-          frameBorder="0"
-          title="PDF Viewer"
-        ></iframe>
-            </Col>
-          </Row>
-        </Container>
-        
-        <footer className='footer'>
-          <div className="footer-content">
-            <a href='https://www.linkedin.com/in/gabriele-massimiani/'>
-            <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
-            LinkedIn
-            </a>
-            <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
-          </div>
-        </footer>
+        <Outlet/>
         </>
-      } />
+        } >
+      
+        <Route index element={
+          <>
+          <Container className="home">
+            
+            {/*About*/}
+            <Row className='section mt-5 mx-4 pt-4'>
+              <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
+              <h2>Project Manager</h2>
+            </Row>
+            <Row className='section mx-5 pt-1'>
+              <p className='p'>
+              I am a university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
+              </p>
+              <p className='p'>
+              Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
+              </p>
+              <p className='p'>
+              I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
+              </p>
+              <p className='p'>
+              My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
+              </p>
+              <p className='p'>
+              I am excited about the opportunity to contribute to your esteemed team!
+              </p>
+              
+              <h2 className='mb-3 mt-3'>Skills & Tools</h2>
+              <div className="skill-logo-container">
+              {skillLogoUp.map((skillLogo, index) => (
+                <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+              ))}
+              </div>
+              <div className="skill-logo-container">
+              {skillLogoDown.map((skillLogo, index) => (
+                <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+              ))}
+              </div>
+            </Row>
+    
+            {/*Projects*/}
+            <Row className='section mt-5 mx-4'>
+              <h1 id='projects'>Projects</h1>
+            </Row>
+            <Row className='section pt-1 mb-2 mx-4 d-flex justify-content-center'>
+              {projects.map((project, index) => (
+                <Col key={index} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center mb-4">
+                  <Card className='card' onClick={() => handleCardClick(project.url)}>
+                    <Card.Img variant="top" src={project.img} className="card-img-small"/>
+                    <Card.Body>
+                      <Card.Title className='card-title'>{project.title}</Card.Title>
+                      <Card.Text className='card-text'>
+                        {project.description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+    
+            {/*Contacts*/}
+            <Row className='section mt-5 mb-2 mx-4'>
+              <h1 id='contact' className='mb-3'>Contact</h1>
+            </Row>
+            <Row className='section mx-5 mb-2'>
+              <Col xs={12} sm={12} md={6} lg={6}>
+              <h2>Let's stay in touch!</h2>
+              <p className='p'>
+              Feel free to fill in the form to contact me for any information or collaboration. <br/> I will reply as soon as possible. 
+              </p>
+              <p className='p'>
+              You can also find me on LinkedIn:<a className='a' href='https://www.linkedin.com/in/gabriele-massimiani/'> Gabriele Massimiani</a>.
+              </p>
+              <p className='p'>
+              If you want to meet and chat, you can contact me on this discord channel: <a className='a' href='https://discord.com/invite/5M9fJyWYtE'> Level Up Lab</a>.
+              </p>
+              <Form ref={form} onSubmit={sendEmail} className="form-container">
+                <Form.Group controlId="formName">
+                  <Form.Label className="form-label">Name*</Form.Label>
+                  <Form.Control type="text" name="user_name" placeholder="Enter your name" required className="form-control"/>
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                  <Form.Label className="form-label">Email address*</Form.Label>
+                  <Form.Control type="email" name="user_email" placeholder="Enter your email" required className="form-control"/>
+                </Form.Group>
+                <Form.Group controlId="formMessage">
+                  <Form.Label className="form-label">Message*</Form.Label>
+                  <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required className="form-control"/>
+                </Form.Group>
+                <Button type="submit" className="button">
+                  Send
+                </Button>
+              </Form>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+              
+    
+              <iframe
+            src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
+            style={{ width: '100%', height: '100%' }}
+            frameBorder="0"
+            title="PDF Viewer"
+          ></iframe>
+              </Col>
+            </Row>
+          </Container>
+          
+          <footer className='footer'>
+            <div className="footer-content">
+              <a href='https://www.linkedin.com/in/gabriele-massimiani/'>
+              <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
+              LinkedIn
+              </a>
+              <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
+            </div>
+          </footer>
+          </>
+        } />
 
-      <Route path="/LevelUpLab" element={
-        <LevelUpLab/>
-      } />
+        <Route path="/LevelUpLab" element={<LevelUpLab/>}/>
+      
+      </Route>
       
     </Routes>
       
