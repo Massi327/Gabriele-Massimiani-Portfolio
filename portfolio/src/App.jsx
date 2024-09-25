@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './App.css'
@@ -11,6 +11,8 @@ import GameJam from './GameJam';
 import GameDesign from './GameDesign';
 import VirtualReality from './VirtualReality';
 import DigitalStrategy from './DigitalStrategy';
+import Badge from 'react-bootstrap/Badge';
+import Spinner from 'react-bootstrap/Spinner';
 
 function App() {
 
@@ -168,18 +170,31 @@ function App() {
     navigate(siteBase+url);
   }
 
+  const [badge, setBadge] = useState('hidden');
+  const [spinner, setSpinner] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setSpinner(true);
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID, 
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
       form.current, 
       import.meta.env.VITE_EMAILJS_YOUR_USER_ID)
       .then((result) => {
-          console.log(result.text);
+          console.log('result.text: '+result.text);
+          setSpinner(false);
+          setBadge('ok');
+          setTimeout(() => {
+            setBadge(false);
+          }, 5000);
       }, (error) => {
           console.log(error.text);
+          setSpinner(false);
+          setBadge('error');
+          setTimeout(() => {
+            setBadge(false);
+          }, 5000);
       });
     form.current.reset();
   };
@@ -282,9 +297,14 @@ function App() {
                   <Form.Label className="form-label">Message*</Form.Label>
                   <Form.Control as="textarea" rows={3} name="message" placeholder="Enter your message" required className="form-control"/>
                 </Form.Group>
+                <div className="button-container">
                 <Button type="submit" className="button">
                   Send
                 </Button>
+                {spinner && <Spinner animation="border" role="status" className="spinner"/>}
+                {badge==='ok' && <Badge pill className="badgeOk" bg="#E1E2D0">Email sent</Badge>}
+                {badge==='error' && <Badge pill className="badgeError" bg="#E1E2D0">Email error</Badge>}
+                </div>
               </Form>
               </Col>
               <Col xs={12} sm={12} md={6} lg={6}>

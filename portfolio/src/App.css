@@ -229,6 +229,30 @@ body {
   background-color: var(--dark);
 }
 
+.form-container .button-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-container .spinner {
+  color: var(--text);
+  margin-left: 10px;
+}
+
+.form-container .badgeOk {
+  background-color: var(--text);
+  color: var(--dark);
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.form-container .badgeError {
+  background-color: var(--secondary);
+  color: var(--text);
+  margin-left: 10px;
+  font-size: 15px;
+}
+
 .a {
   text-decoration: none; 
   color: var(--text); 
