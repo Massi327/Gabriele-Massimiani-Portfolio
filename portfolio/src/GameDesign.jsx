@@ -1,8 +1,17 @@
+import './App.css'
+import { Row } from 'react-bootstrap'
+
 export default function GameDesign() { 
     return (
-        <div>
-        <h1>Game Design</h1>
-        <p>Game Design is the art of applying design and aesthetics to create a game for entertainment or for educational, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.</p>
-        </div>
+        <>
+            <Row className='section mt-5 mx-4 pt-4'>
+              <h1><span className='red-text'>Game Design</span></h1>
+            </Row>
+            <Row className='section mx-5 pt-1'>
+                <p className='p'>
+                    TODO              
+                </p>
+            </Row>
+        </>
     );
 }

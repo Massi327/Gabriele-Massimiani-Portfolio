@@ -1,8 +1,17 @@
+import './App.css'
+import { Row } from 'react-bootstrap'
+
 export default function DigitalStrategy() { 
     return (
-        <div>
-        <h1>Digital Strategy</h1>
-        <p>Digital Strategy is the process of specifying an organization's vision, goals, opportunities, and initiatives in order to maximize the business benefits of digital initiatives to the organization. These can range from an enterprise focus, which considers the broader opportunities and risks that digital potentially creates.</p>
-        </div>
+        <>
+            <Row className='section mt-5 mx-4 pt-4'>
+              <h1><span className='red-text'>Digital Strategy</span></h1>
+            </Row>
+            <Row className='section mx-5 pt-1'>
+                <p className='p'>
+                    TODO              
+                </p>
+            </Row>
+        </>
     );
 }

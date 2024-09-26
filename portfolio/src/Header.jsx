@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import { Container, Navbar, Nav } from "react-bootstrap";
 import './App.css'
 
-export default function Header() {
+export default function Header(props) {
 
+    const {homePage} = props;
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.querySelector('.navbar');
@@ -20,19 +21,22 @@ export default function Header() {
         };
     }, []);
 
+    const href = homePage ? '#' : '/Gabriele-Massimiani-Portfolio/';
+
     return (
         <Navbar className="navbar" data-bs-theme='dark'>
         <Container>
-            <a href='#' className='navbar-brand'>
+            <a href={href} className='navbar-brand' >
             <img alt="Logo_GM" src="/Gabriele-Massimiani-Portfolio/assets/Logo_GM.svg" className="navbar-brand-logo"/>
                 Gabriele Massimiani | Portfolio
             </a>
-            
-            <Nav className="ms-auto">
-                <Nav.Link href="#projects" className="navlink">Projects</Nav.Link>
-                <Nav.Link href="#contact" className="navlink">Contact</Nav.Link>
-                <Nav.Link href="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf" className="navlink">Resume</Nav.Link>
-            </Nav>
+            {homePage && 
+                <Nav className="ms-auto">
+                    <Nav.Link href="#projects" className="navlink">Projects</Nav.Link>
+                    <Nav.Link href="#contact" className="navlink">Contact</Nav.Link>
+                    <Nav.Link href="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf" className="navlink">Resume</Nav.Link>
+                </Nav>
+            }
         </Container>
         </Navbar>
     );

@@ -1,8 +1,17 @@
+import './App.css'
+import { Row } from 'react-bootstrap'
+
 export default function VirtualReality() { 
     return (
-        <div>
-        <h1>Virtual Reality</h1>
-        <p>Virtual Reality is an artificial environment that is created with software and presented to the user in such a way that the user suspends belief and accepts it as a real environment. On a computer, virtual reality is primarily experienced through two of the five senses: sight and sound.</p>
-        </div>
+        <>
+            <Row className='section mt-5 mx-4 pt-4'>
+              <h1><span className='red-text'>Virtual Reality</span></h1>
+            </Row>
+            <Row className='section mx-5 pt-1'>
+                <p className='p'>
+                    TODO              
+                </p>
+            </Row>
+        </>
     );
 }

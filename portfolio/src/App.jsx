@@ -18,6 +18,7 @@ function App() {
 
   const navigate = useNavigate();
   const siteBase = '/Gabriele-Massimiani-Portfolio';
+  const [homePage, setHomePage] = useState(true);
 
   const projects = [
     {
@@ -29,7 +30,7 @@ function App() {
     {
       title: (
       <>
-        GAME JAM (2023/2024)
+        Game Jam (2023/2024)
       </>
     ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/Clownageddon.png', 
@@ -167,6 +168,7 @@ function App() {
   ]
 
   const handleCardClick = (url) => {
+    setHomePage(false);
     navigate(siteBase+url);
   }
 
@@ -204,14 +206,25 @@ function App() {
     <Routes>
       <Route path="/" element={
         <>
-        <Header/>
-        <Outlet/>
+        <Header homePage={homePage}/>
+        <Container className="home">
+          <Outlet/>
+          <footer className='footer'>
+            <div className="footer-content">
+              <a href='https://www.linkedin.com/in/gabriele-massimiani/'>
+              <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
+              LinkedIn
+              </a>
+              <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
+            </div>
+          </footer>
+        </Container>
         </>
         } >
       
         <Route index element={
           <>
-          <Container className="home">
+          
             
             {/*About*/}
             <Row className='section mt-5 mx-4 pt-4'>
@@ -246,15 +259,16 @@ function App() {
                 <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
               ))}
               </div>
+              <div id='projects'></div>
             </Row>
     
             {/*Projects*/}
             <Row className='section mt-5 mx-4'>
-              <h1 id='projects'>Projects</h1>
+              <h1>Projects</h1>
             </Row>
             <Row className='section pt-1 mb-2 mx-4 d-flex justify-content-center'>
               {projects.map((project, index) => (
-                <Col key={index} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center mb-4">
+                <Col key={index} xs={12} sm={6} md={4} lg={4} className="d-flex justify-content-center mb-4">
                   <Card className='card' onClick={() => handleCardClick(project.url)}>
                     <Card.Img variant="top" src={project.img} className="card-img-small"/>
                     <Card.Body>
@@ -318,17 +332,6 @@ function App() {
           ></iframe>
               </Col>
             </Row>
-          </Container>
-          
-          <footer className='footer'>
-            <div className="footer-content">
-              <a href='https://www.linkedin.com/in/gabriele-massimiani/'>
-              <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
-              LinkedIn
-              </a>
-              <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
-            </div>
-          </footer>
           </>
         } />
 

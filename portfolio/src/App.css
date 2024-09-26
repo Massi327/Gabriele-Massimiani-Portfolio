@@ -154,8 +154,8 @@ body {
 }
 
 .card {
-  width: 18rem;
-  height: 30rem;
+  width: 22rem;
+  height: 35rem;
   margin-top: 2rem;
   border: var(--text) 2px solid;
   background-color: var(--secondary);
@@ -170,7 +170,7 @@ body {
 
 .card-img-small {
   width: 90%; 
-  height: 12rem; 
+  height: 15rem; 
   object-fit: cover;
   display: block;
   margin: 1rem auto;
