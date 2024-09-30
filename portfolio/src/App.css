@@ -84,7 +84,7 @@ body {
   height: 50px;
   width: auto;
   display: inline-block;
-  margin-right: 10px;
+  
 }
 
 .navbar.scrolled .navbar-brand {
@@ -94,6 +94,30 @@ body {
 .navbar.scrolled .navbar-brand:hover {
   color: var(--navbrand-hover-scrolled-color);
 }
+
+.dropdown-outline {
+  border: 1px solid var(--text); 
+  background-color: transparent;
+  color: var(--text); 
+}
+
+.dropdown-outline.show {
+    background-color: var(--text); 
+    color: var(--dark);
+    border: 1px solid var(--text); 
+}
+
+.dropdown-outline:not(.show) {
+  border: 1px solid var(--text); 
+  background-color: transparent;
+  color: var(--text); 
+}
+
+
+.dropdown-outline::after { 
+  display: none;
+}
+
 
 .home {
   max-width: 1500px;
