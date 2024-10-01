@@ -321,15 +321,15 @@ function App() {
                 </div>
               </Form>
               </Col>
-              <Col xs={12} sm={12} md={6} lg={6}>
               
-    
+              <Col xs={12} sm={12} md={6} lg={6}>
               <iframe
-            src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
-            style={{ width: '100%', height: '100%' }}
-            frameBorder="0"
-            title="PDF Viewer"
-          ></iframe>
+                src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
+                style={{ width: '100%'}}
+                frameBorder="0"
+                title="CV"
+                className='pt-4 pdf-iframe'
+              ></iframe>
               </Col>
             </Row>
           </>

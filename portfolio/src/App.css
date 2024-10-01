@@ -285,3 +285,14 @@ body {
 .a:hover {
   color: var(--red); 
 }
+
+@media (max-width: 767px) {
+  .pdf-iframe {
+    height: 500px !important;
+  }
+}
+
+.pdf-iframe {
+  height: 100%;
+  width: 100%;
+}
