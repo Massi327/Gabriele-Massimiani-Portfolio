@@ -326,7 +326,7 @@ function App() {
               <iframe
                 src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
                 style={{ width: '100%'}}
-                frameBorder="0"
+                
                 title="CV"
                 className='pt-4 pdf-iframe'
               ></iframe>

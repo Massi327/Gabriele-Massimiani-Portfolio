@@ -288,7 +288,7 @@ body {
 
 @media (max-width: 767px) {
   .pdf-iframe {
-    height: 500px !important;
+    height: 400px !important;
   }
 }
 
