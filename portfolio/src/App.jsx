@@ -229,7 +229,7 @@ function App() {
           
             
             {/*About*/}
-            <Row className='section mt-5 mx-2 pt-4'>
+            <Row className='section mt-5 mx-2'>
               <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
               <h2>Project Manager</h2>
             </Row>

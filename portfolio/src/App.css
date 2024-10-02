@@ -95,27 +95,30 @@ body {
   color: var(--navbrand-hover-scrolled-color);
 }
 
-.dropdown-outline {
-  border: 1px solid var(--text); 
-  background-color: transparent;
-  color: var(--text); 
+.navbar-collapse-fixed {
+  position: fixed;
+  top: 56px;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--dark);
 }
 
-.dropdown-outline.show {
-    background-color: var(--text); 
-    color: var(--dark);
-    border: 1px solid var(--text); 
+.navbar-collapse-fixed.scrolled {
+  background-color: var(--scrolled);
 }
 
-.dropdown-outline:not(.show) {
-  border: 1px solid var(--text); 
-  background-color: transparent;
-  color: var(--text); 
+.button-collapse {
+  border: 1px solid var(--text);
+  color: var(--text);
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-
-.dropdown-outline::after { 
-  display: none;
+.button-collapse:hover,
+.button-collapse:focus,
+.button-collapse:active {
+    border: 1px solid var(--text); /* Colore del bordo */
+    color: var(--text); /* Colore del testo */
 }
 
 

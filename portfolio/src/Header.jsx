@@ -1,19 +1,28 @@
 import { useEffect } from 'react';
-import { Container, Navbar, Nav, Dropdown } from "react-bootstrap";
+import { Container, Navbar, Nav, Dropdown, Button, Collapse } from "react-bootstrap";
 import './App.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Importazione delle icone
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import { useState } from 'react';
 
 
 export default function Header(props) {
 
+    const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const {homePage} = props;
+    
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.querySelector('.navbar');
+            const collapse = document.querySelector('.navbar-collapse-fixed');
+
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
+                setScrolled(true);
+                setOpen(false);
             } else {
                 navbar.classList.remove('scrolled');
+                setScrolled(false);
             }
         };
 
@@ -26,6 +35,7 @@ export default function Header(props) {
     const href = homePage ? '#' : '/Gabriele-Massimiani-Portfolio/';
 
     return (
+        <>
         <Navbar className="navbar" data-bs-theme='dark'>
         <Container>
             <a href={href} className='navbar-brand'>
@@ -42,18 +52,31 @@ export default function Header(props) {
                     <Nav.Link href="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf" className="navlink">Resume</Nav.Link>
                 </Nav>
 
-                <Dropdown align={{ lg: 'end' }} className='d-lg-none'>
-                <Dropdown.Toggle className="dropdown-outline" variant=''>
-                    <i className="bi bi-list"></i>
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                    <Dropdown.Item >Storico Partite</Dropdown.Item>
-                    <Dropdown.Item >Logout</Dropdown.Item>
-                </Dropdown.Menu>
-                </Dropdown>
-                </>
+                <Button
+                        className="d-lg-none button-collapse"
+                        variant=''
+                        onClick={() => setOpen(!open)}
+                        aria-controls="navbar-collapse"
+                        aria-expanded={open}
+                    >
+                        <i className="bi bi-list"></i>
+                    </Button>
+            </>
             }
+            
         </Container>
         </Navbar>
+        {homePage &&
+            <Collapse in={open} className={`navbar-collapse-fixed ${scrolled ? 'scrolled' : ''}`}>
+                <div id="navbar-collapse" >
+                    <Nav className="flex-column">
+                        <Nav.Link href="#projects" className="navlink">Projects</Nav.Link>
+                        <Nav.Link href="#contact" className="navlink">Contact</Nav.Link>
+                        <Nav.Link href="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf" className="navlink">Resume</Nav.Link>
+                    </Nav>
+                </div>
+            </Collapse>
+        }
+        </>
     );
 }
