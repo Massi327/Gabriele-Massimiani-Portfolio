@@ -13,6 +13,8 @@ import VirtualReality from './VirtualReality';
 import DigitalStrategy from './DigitalStrategy';
 import Badge from 'react-bootstrap/Badge';
 import Spinner from 'react-bootstrap/Spinner';
+import { PDFViewer } from '@react-pdf/renderer';
+import MyDocument from './Pdf';
 
 function App() {
 
@@ -215,7 +217,7 @@ function App() {
               <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
               LinkedIn
               </a>
-              <span>© 2024 Gabriele Massimiani. All rights reserved.</span>
+              <span className='footer-text'>© 2024 Gabriele Massimiani</span>
             </div>
           </footer>
         </Container>
@@ -227,11 +229,11 @@ function App() {
           
             
             {/*About*/}
-            <Row className='section mt-5 mx-4 pt-4'>
+            <Row className='section mt-5 mx-2 pt-4'>
               <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
               <h2>Project Manager</h2>
             </Row>
-            <Row className='section mx-5 pt-1'>
+            <Row className='section mx-3 pt-1'>
               <p className='p'>
               I am a university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
               </p>
@@ -263,10 +265,10 @@ function App() {
             </Row>
     
             {/*Projects*/}
-            <Row className='section mt-5 mx-4'>
+            <Row className='section mt-5 mx-2'>
               <h1>Projects</h1>
             </Row>
-            <Row className='section pt-1 mb-2 mx-4 d-flex justify-content-center'>
+            <Row className='section pt-1 mb-2 mx-3 d-flex justify-content-center'>
               {projects.map((project, index) => (
                 <Col key={index} xs={12} sm={6} md={4} lg={4} className="d-flex justify-content-center mb-4">
                   <Card className='card' onClick={() => handleCardClick(project.url)}>
@@ -283,10 +285,10 @@ function App() {
             </Row>
     
             {/*Contacts*/}
-            <Row className='section mt-5 mb-2 mx-4'>
+            <Row className='section mt-5 mb-2 mx-2'>
               <h1 id='contact' className='mb-3'>Contact</h1>
             </Row>
-            <Row className='section mx-5 mb-2'>
+            <Row className='section mx-3 mb-2'>
               <Col xs={12} sm={12} md={6} lg={6}>
               <h2>Let's stay in touch!</h2>
               <p className='p'>
@@ -325,11 +327,15 @@ function App() {
               <Col xs={12} sm={12} md={6} lg={6}>
               <iframe
                 src="/Gabriele-Massimiani-Portfolio/assets/CV GABRIELE MASSIMIANI.pdf"
-                style={{ width: '100%'}}
-                
                 title="CV"
                 className='pt-4 pdf-iframe'
+                allow="fullscreen"
               ></iframe>
+              
+              {/*<PDFViewer>
+                <MyDocument />
+              </PDFViewer>*/}
+
               </Col>
             </Row>
           </>
