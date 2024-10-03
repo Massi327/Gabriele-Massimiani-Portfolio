@@ -24,7 +24,11 @@ function App() {
 
   const projects = [
     {
-      title: 'Level Up Lab', 
+      title: (
+        <>
+          Level Up Lab <br/> (2024)
+        </>
+      ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
       url: '/LevelUpLab',
       description: 'TODO'
@@ -32,12 +36,17 @@ function App() {
     {
       title: (
       <>
-        Game Jam (2023/2024)
+        Game Jam <br/> (2023/2024)
       </>
     ), 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Clownageddon.png', 
+      img: '/Gabriele-Massimiani-Portfolio/assets/GlobalGameJamLogo.png', 
       url: '/GameJam',
-      description: 'TODO'
+      description: (
+        <>
+        In 2023, I participated in the <b> Fail/Safe Game Jam </b> as a <b>UI Programmer.</b> <br/> <br/> 
+        In 2024, I took part in the <b> Global Game Jam </b> as both a <b> Game Designer </b> and <b> UI Programmer. </b>
+        </>
+      )
     },
     {
       title: (
@@ -48,7 +57,13 @@ function App() {
       ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/Game Design.png', 
       url: '/GameDesign',
-      description: 'TODO'
+      description: (
+        <>
+          During the <b>Game Design</b> course, I learned about both video game development and the use of <b>Game Thinking</b> in non-gaming contexts like <b>Gamification</b>. 
+          <br/> <br/>
+          During the course, I developed the video game prototype <b>Beyond The Shell</b> from concept to pitch.
+        </>
+      )
     },
     {
       title: (
@@ -59,7 +74,13 @@ function App() {
       ),  
       img: '/Gabriele-Massimiani-Portfolio/assets/The Sky Postman.png', 
       url: '/VirtualReality',
-      description: 'TODO'
+      description: (
+        <>
+          During the <b>Virtual Reality</b> course, I gained an understanding of immersive technologies (VR, AR and MR). 
+          <br/> <br/>
+          As part of the course, I developed a VR project called <b>The Sky Postman</b>, an immersive adventure designed for VR headsets.
+        </>
+      )
     },
     {
       title:  (
@@ -70,7 +91,13 @@ function App() {
       ),    
       img: '/Gabriele-Massimiani-Portfolio/assets/APPy family.png', 
       url: '/DigitalStrategy',
-      description: 'TODO'
+      description: (
+        <>
+          In the <b>Digital Strategy</b> course, I learned how to critically analyze the digital ecosystem and strategically plan a brand's presence online. 
+          <br/> <br/>
+          In the course, I created a customized digital strategy for the video game company <b>Dramatic Iceberg</b>.
+        </>
+      )
     },
 
   ]
