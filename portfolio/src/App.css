@@ -307,3 +307,20 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+/* Other pages */
+
+.imgPageProject {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  float: right;
+}
+
+@media (max-width: 990px) {
+  .imgPageProject{
+    width: 100%;
+    height: 100%;
+    float: center;
+  }
+}
