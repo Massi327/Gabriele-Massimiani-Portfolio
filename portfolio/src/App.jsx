@@ -31,7 +31,12 @@ function App() {
       ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
       url: '/LevelUpLab',
-      description: 'TODO'
+      description: (
+        <>
+          I am the <b>co-founder</b> and <b>General Project Manager</b> of <b>Level Up Lab </b>, 
+          a student team at Politecnico di Torino focused on enhancing game development skills and building a vibrant community around video gaming. 
+        </>
+      )
     },
     {
       title: (
