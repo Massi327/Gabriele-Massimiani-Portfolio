@@ -311,8 +311,8 @@ body {
 /* Other pages */
 
 .imgPageProject {
-  width: 90%;
-  height: 90%;
+  width: 93%;
+  height: 93%;
   object-fit: contain;
   float: right;
 }
@@ -323,4 +323,13 @@ body {
     height: 100%;
     float: center;
   }
+}
+
+.aOtherPages {
+  text-decoration: none; 
+  color: var(--text); 
+}
+
+.aOtherPages:hover {
+  color: var(--red); 
 }
