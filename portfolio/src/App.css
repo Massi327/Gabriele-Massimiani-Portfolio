@@ -310,15 +310,29 @@ body {
 
 /* Other pages */
 
-.imgPageProject {
+.imgPageProjectDx {
   width: 93%;
   height: 93%;
-  object-fit: contain;
+  border-radius: 8px;
+  overflow: hidden;
   float: right;
 }
 
+.imgPageProjectSx {
+  width: 93%;
+  height: 93%;
+  overflow: hidden;
+  float: left;
+  border-radius: 8px;
+}
+
 @media (max-width: 990px) {
-  .imgPageProject{
+  .imgPageProjectDx{
+    width: 100%;
+    height: 100%;
+    float: center;
+  }
+  .imgPageProjectSx{
     width: 100%;
     height: 100%;
     float: center;

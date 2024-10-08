@@ -21,25 +21,31 @@ export default function LevelUpLab() {
                     </p>
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={8}>
-                    <img src='/Gabriele-Massimiani-Portfolio/assets/LUL_Press_Kit.png' alt='Level Up Lab Logo' className='imgPageProject'/>
+                    <img src='/Gabriele-Massimiani-Portfolio/assets/LUL_Press_Kit.png' alt='Level Up Lab Logo' className='imgPageProjectDx'/>
                 </Col>
             </Row>
 
-            <Row className='section mx-3 pt-1'>
+            <Row className='section mx-3 pt-1 mt-2'>
               <h2>Role & Structure</h2>
             </Row>
             <Row className='section mx-4 pt-1'>
                 <Col xs={12} sm={12} md={12} lg={8}>
-                    <img src='/Gabriele-Massimiani-Portfolio/assets/LUL_Press_Kit.png' alt='Level Up Lab Logo' className='imgPageProject'/>
+                    <img src='/Gabriele-Massimiani-Portfolio/assets/NotionProgram Plan.png' alt='Level Up Lab Logo' className='imgPageProjectSx'/>
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={4}>
-                    <p className='p'>
+                    <p className='p mt-2'>
                     At Level Up Lab, I held the role of General Project Manager in the Management team and served as Project Manager in one of the five development teams. 
                     <br/><br/>
                     As part of the Management, consisting of 7 members, we conducted weekly meetings, and I was responsible for overseeing all 5 projects of Level Up Lab.
                     <br/><br/>
                     Specifically, together with the Team Leader, we created a Program Plan and decided to implement two-week Sprints. 
                     We divided our time into project phases: Brainstorming, Preproduction, Production, Polishing, and finally a Pitch phase.
+                    </p>
+                </Col>
+            </Row>
+            <Row className='section mx-4 pt-1'>
+                <Col xs={12} sm={12} md={12} lg={4}>
+                    <p className='p'>
                     Additionally, we defined the deliverables for each phase and created a risk assessment to address the challenges posed by a student team, anticipating that members would frequently change.
                     <br/><br/>
                     At the end of each two-week Sprint, we had a Review phase, during which I assessed any issues within the teams and provided advice on how to resolve them if necessary.
@@ -47,17 +53,20 @@ export default function LevelUpLab() {
                     As our main tool, we used Notion to manage the entire student team.
                     </p>
                 </Col>
+                <Col xs={12} sm={12} md={12} lg={8}>
+                    <img src='/Gabriele-Massimiani-Portfolio/assets/NotionHome.png' alt='Level Up Lab Logo' className='imgPageProjectDx'/>
+                </Col>
             </Row>
             <Row className='section mx-4 pt-1'>
+                <Col xs={12} sm={12} md={12} lg={8}>
+                    <img src='/Gabriele-Massimiani-Portfolio/assets/JiraBacklog.png' alt='Level Up Lab Logo' className='imgPageProjectSx mt-2'/>
+                </Col>
                 <Col xs={12} sm={12} md={12} lg={4}>
-                <p className='p'>
+                <p className='p mt-3'>
                     As Project Manager for the ThoseClowns Games team, I ensured that Sprint Planning, Reviews, Retrospectives, and general meetings were organized and efficient.
                     <br/><br/>
                     We used Jira to track the project's status and Notion for documentation.
                     </p>
-                </Col>
-                <Col xs={12} sm={12} md={12} lg={8}>
-                    <img src='/Gabriele-Massimiani-Portfolio/assets/LUL_Press_Kit.png' alt='Level Up Lab Logo' className='imgPageProject'/>
                 </Col>
             </Row>
             </>
