@@ -347,3 +347,47 @@ body {
 .aOtherPages:hover {
   color: var(--red); 
 }
+
+.embededItch {
+  width: 552px;
+  height: 167px;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .embededItch {
+    width: 208px;
+    height: 167px;
+  }
+}
+
+.video-container-dx {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto; /* Center the container itself */
+}
+
+.video-container-sx {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto; /* Center the container itself */
+}
+
+.video-container-dx iframe,
+.video-container-sx iframe {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
