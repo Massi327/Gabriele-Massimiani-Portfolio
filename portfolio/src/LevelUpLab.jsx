@@ -8,9 +8,7 @@ export default function LevelUpLab() {
               <h1><span className='red-text'>Level Up Lab</span></h1>
               <h2>Co-founder and General Project Manager</h2>
             </Row>
-            <Row className='section mx-3 pt-1'>
-            </Row>
-            <Row className='section mx-4 pt-1'>
+            <Row className='section mx-4 pt-3'>
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p'>
                     Level Up Lab (LUL) is a student team from Politecnico di Torino driven by a collective passion for video gaming. This student-led initiative seeks to elevate game development skills among the student body, preparing them for successful careers in the gaming industry while cultivating a vibrant community centred on a shared love for video games.
