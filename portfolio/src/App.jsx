@@ -94,7 +94,7 @@ function App() {
         (University Project - 2023)
         </>
       ),    
-      img: '/Gabriele-Massimiani-Portfolio/assets/APPy family.png', 
+      img: '/Gabriele-Massimiani-Portfolio/assets/DigitalStrategyCard.png', 
       url: '/DigitalStrategy',
       description: (
         <>
