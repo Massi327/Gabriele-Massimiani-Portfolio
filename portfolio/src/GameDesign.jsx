@@ -21,36 +21,21 @@ export default function GameDesign() {
                         Project products: <a href='https://drive.google.com/drive/folders/1xQgwhUWqW5u1B2fjd0F76i_cZb1jxiJW' className='aOtherPages'>Beyond The Shell</a>
                     </p>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={8}>
-                {/*
-                <Carousel>
+                <Col xs={12} sm={12} md={12} lg={8} >
+                <Carousel className="custom-carousel-dx">
                     <Carousel.Item>
-                        <ExampleCarouselImage text="First slide" />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellMenu.png' alt='Level Up Lab Logo'/>
                     </Carousel.Item>
-                            <Carousel.Item>
-                            <ExampleCarouselImage text="Second slide" />
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                            <ExampleCarouselImage text="Third slide" />
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
+                    <Carousel.Item>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellCamelCase.png' alt='Level Up Lab Logo'/>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellElevatorPitch.png' alt='Level Up Lab Logo' />  
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellSummary.png' alt='Level Up Lab Logo' />
                     </Carousel.Item>
                 </Carousel>
-                */}
-                 <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellMenu.png' alt='Level Up Lab Logo' className='imgPageProjectDx'/>
-                    
                 </Col>
             </Row>
 
@@ -59,7 +44,20 @@ export default function GameDesign() {
             </Row>
             <Row className='section mx-4 pt-1'>
                 <Col xs={12} sm={12} md={12} lg={8}>
-                    <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellPT.png' alt='Level Up Lab Logo' className='imgPageProjectSx'/>
+                    <Carousel className="custom-carousel-sx">
+                        <Carousel.Item>
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellPT.png' alt='Level Up Lab Logo' />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBudget.png' alt='Level Up Lab Logo' />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBenchmarkHK.png' alt='Level Up Lab Logo' />  
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBenchmarkOri.png' alt='Level Up Lab Logo' /> 
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p mt-2'>

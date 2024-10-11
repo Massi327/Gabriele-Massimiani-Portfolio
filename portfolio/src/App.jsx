@@ -77,7 +77,7 @@ function App() {
         (University Project - 2023)
         </>
       ),  
-      img: '/Gabriele-Massimiani-Portfolio/assets/The Sky Postman.png', 
+      img: '/Gabriele-Massimiani-Portfolio/assets/TheSkyPostmanPoetic.png', 
       url: '/VirtualReality',
       description: (
         <>
