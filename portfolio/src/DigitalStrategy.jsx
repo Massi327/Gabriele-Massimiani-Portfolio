@@ -60,11 +60,14 @@ export default function DigitalStrategy() {
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p mt-2'>
-                        DESCRIZIONE DI COSA HO FATTO:
-                        - macro aree dei format organici
-                        - GANTT
-                        - Contenuti orgnici
-                        - ANALISI RATLOOP
+                        In the initial phase of the project, I focused on analyzing a competitor of Dramatic Iceberg, Ratloop Games Canada, a video game company.
+                        I started with organic research and an analysis of their Google My Business profile, then moved on to review their website and social media, suggesting improvements for certain aspects.
+                        Afterwards, along with the work done by my teammates on other video game companies, we compiled all the analyses into a single document.
+
+                        The second phase of the project was specifically dedicated to Dramatic Iceberg, with the goal of creating a custom digital strategy.
+                        I was responsible for: designing and creating mockups for organic content; defining both physical and digital touchpoints; analyzing the market and trends;
+                        developing a GANTT chart that included advertising formats, organic content, and real-world activities like industry events;
+                        creating a contingency plan; and identifying the most relevant KPIs.
                     </p>
                 </Col>
             </Row>
