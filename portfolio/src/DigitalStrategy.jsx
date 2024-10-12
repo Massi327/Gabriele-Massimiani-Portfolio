@@ -10,7 +10,11 @@ export default function DigitalStrategy() {
             <Row className='section mx-4 pt-3'>
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p'>
-                        DESCRIZIO CORSO BREVE CON ACCENNO PROGETTO
+                        The course provided me with an in-depth knowledge of the mechanisms and key tools for managing, planning, monitoring, and advertising on Social Media.
+                        Together with a team of 6 people, we initially decided that the company for which we would develop a digital strategy would be Dramatic Iceberg.
+                        We then analyzed and understood the users' needs, conceived concepts, 
+                        and integrated marketing and digital communication experiences and knowledge to achieve specific business objectives.
+                        The theoretical and practical skills I gained allowed me to meet the needs of a start-up, but they can also be applied to medium and large companies.
                     </p>
                     <p className='p'>
                         Project products: <a href='https://drive.google.com/drive/folders/1biMq4AQVDDZXvaZfLCvhotBVq3u4BZuv?usp=sharing' className='aOtherPages'>Dramatic Iceberg Digital Strategy</a>
@@ -57,8 +61,10 @@ export default function DigitalStrategy() {
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p mt-2'>
                         DESCRIZIONE DI COSA HO FATTO:
+                        - macro aree dei format organici
                         - GANTT
-                        -ANALISI RATLOOP
+                        - Contenuti orgnici
+                        - ANALISI RATLOOP
                     </p>
                 </Col>
             </Row>
