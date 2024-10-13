@@ -45,7 +45,7 @@ export default function DigitalStrategy() {
                 <Col xs={12} sm={12} md={12} lg={8}>
                     <Carousel className="custom-carousel-sx">
                         <Carousel.Item>
-                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategyGANTT.png' alt='DigitalStrategyGANTT' />
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategyGANTT.jpg' alt='DigitalStrategyGANTT' />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Touchpoint.png' alt='DigitalStrategy_Touchpoint' />
