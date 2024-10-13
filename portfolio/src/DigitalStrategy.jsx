@@ -23,16 +23,16 @@ export default function DigitalStrategy() {
                 <Col xs={12} sm={12} md={12} lg={8} >
                 <Carousel className="custom-carousel-dx">
                     <Carousel.Item>
-                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellMenu.png' alt='Level Up Lab Logo'/>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Funnel_B2C.png' alt='DigitalStrategy_Funnel_B2C'/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellCamelCase.png' alt='Level Up Lab Logo'/>
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Goals.png' alt='DigitalStrategy_Goals'/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellElevatorPitch.png' alt='Level Up Lab Logo' />  
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Competitors.png' alt='DigitalStrategy_Competitors' />  
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellSummary.png' alt='Level Up Lab Logo' />
+                        <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Concepts.png' alt='DigitalStrategy_Concepts' />
                     </Carousel.Item>
                 </Carousel>
                 </Col>
@@ -45,16 +45,16 @@ export default function DigitalStrategy() {
                 <Col xs={12} sm={12} md={12} lg={8}>
                     <Carousel className="custom-carousel-sx">
                         <Carousel.Item>
-                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellPT.png' alt='Level Up Lab Logo' />
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategyGANTT.png' alt='DigitalStrategyGANTT' />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBudget.png' alt='Level Up Lab Logo' />
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Touchpoint.png' alt='DigitalStrategy_Touchpoint' />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBenchmarkHK.png' alt='Level Up Lab Logo' />  
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Mockup.png' alt='DigitalStrategy_Mockup' />  
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellBenchmarkOri.png' alt='Level Up Lab Logo' /> 
+                            <img src='/Gabriele-Massimiani-Portfolio/assets/DigitalStrategy_Contingency.png' alt='DigitalStrategy_Contingency' /> 
                         </Carousel.Item>
                     </Carousel>
                 </Col>

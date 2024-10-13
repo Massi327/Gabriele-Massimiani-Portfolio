@@ -107,82 +107,6 @@ function App() {
 
   ]
 
-  const oldProject = [
-    {
-      title: 'Level Up Lab', 
-      img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
-      url: 'https://www.leveluplab.it/',
-      description: 'TODO'
-    },
-    {
-      title: (
-      <>
-        Clownageddon <br/>
-        GLOBAL GAME JAM (2024)
-      </>
-    ), 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Clownageddon.png', 
-      url: 'https://abstractborderstudio.itch.io/clownageddon',
-      description: 'TODO'
-    },
-    {
-      title: (
-        <>
-        Line Spacing <br/> 
-        FAIL/SAFE GAME JAM
-        </>
-    ), 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Line Spacing.png', 
-      url: 'https://abstractborderstudio.itch.io/linespacing',
-      description: 'TODO'
-    },
-    {
-      title: (
-        <>
-        Game Design <br/> 
-        (University Project - 2023)
-        </>
-      ), 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Game Design.png', 
-      url: 'https://drive.google.com/drive/folders/1xQgwhUWqW5u1B2fjd0F76i_cZb1jxiJW?usp=sharing',
-      description: 'TODO'
-    },
-    {
-      title: 'Computer Graphics (University Project - 2023)', 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Computer Grafica.png', 
-      url: 'https://drive.google.com/drive/folders/1ExdxCFqfp_qRhEA5NKu8tBZz6U6Zeihh?usp=sharing',
-      description: 'TODO'
-    },
-    {
-      title: 'Computer Animation (University Project - 2023)', 
-      img: '/Gabriele-Massimiani-Portfolio/assets/Computer Animation.png', 
-      url: 'https://drive.google.com/drive/folders/1_HJ8RKqDarBg5fbkirwpYArqR78tFC_6?usp=sharing',
-      description: 'TODO'
-    },
-    {
-      title: (
-        <>
-        Virtual Reality <br/> 
-        (University Project - 2023)
-        </>
-      ),  
-      img: '/Gabriele-Massimiani-Portfolio/assets/The Sky Postman.png', 
-      url: 'https://cutt.ly/LwvVVqop',
-      description: 'TODO'
-    },
-    {
-      title:  (
-        <>
-        HCI <br/> 
-        (University Project - 2023)
-        </>
-      ),    
-      img: '/Gabriele-Massimiani-Portfolio/assets/APPy family.png', 
-      url: 'https://drive.google.com/drive/folders/1HvJw8jJ-kHlRQ4E_pqUz4vJm_PtwBvn1?usp=sharing',
-      description: 'TODO'
-    },
-  ]
-
   const skillLogoUp = [
     {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion'},
@@ -192,8 +116,9 @@ function App() {
     {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/csharp.png', alt: 'Csharp'},
   ]
-
+  
   const skillLogoDown = [
+    {src: '/Gabriele-Massimiani-Portfolio/assets/GitHub_Logo.png', alt: 'GitHub'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/react-logo.svg', alt: 'React'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/bootstrap-logo.svg', alt: 'Bootstrap'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/javascript-logo.svg', alt: 'Javascript'},
@@ -267,7 +192,7 @@ function App() {
             </Row>
             <Row className='section mx-3 pt-1'>
               <p className='p'>
-              I am a university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
+              I am an university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
               </p>
               <p className='p'>
               Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
