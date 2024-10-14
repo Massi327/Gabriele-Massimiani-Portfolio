@@ -20,7 +20,8 @@ function App() {
 
   const navigate = useNavigate();
   const siteBase = '/Gabriele-Massimiani-Portfolio';
-  const [homePage, setHomePage] = useState(true);
+  //const [homePage, setHomePage] = useState(true);
+  const homePage = location.pathname === siteBase || location.pathname === `${siteBase}/`;
 
   const projects = [
     {
@@ -127,7 +128,6 @@ function App() {
   ]
 
   const handleCardClick = (url) => {
-    setHomePage(false);
     navigate(siteBase+url);
   }
 
@@ -159,6 +159,8 @@ function App() {
       });
     form.current.reset();
   };
+
+  
 
   return (
     

@@ -1,15 +1,14 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Navbar, Nav, Dropdown, Button, Collapse } from "react-bootstrap";
 import './App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'; 
-import { useState } from 'react';
-
 
 export default function Header(props) {
 
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const {homePage} = props;
+    const href = homePage ? '#' : '/Gabriele-Massimiani-Portfolio/';
     
     useEffect(() => {
         const handleScroll = () => {
@@ -31,9 +30,7 @@ export default function Header(props) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    const href = homePage ? '#' : '/Gabriele-Massimiani-Portfolio/';
-
+    
     return (
         <>
         <Navbar className="navbar" data-bs-theme='dark'>
@@ -41,7 +38,7 @@ export default function Header(props) {
             <a href={href} className='navbar-brand'>
                 <img alt="Logo_GM" src="/Gabriele-Massimiani-Portfolio/assets/Logo_GM.svg" className="navbar-brand-logo"/>
             </a>
-            <a href={href} className='navbar-brand d-none d-lg-block'>
+            <a href={href} className='navbar-brand d-none d-lg-block me-auto'>
                 Gabriele Massimiani | Portfolio
             </a>
             {homePage && 
