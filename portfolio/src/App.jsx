@@ -129,6 +129,7 @@ function App() {
 
   const handleCardClick = (url) => {
     navigate(siteBase+url);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   const [badge, setBadge] = useState('hidden');
