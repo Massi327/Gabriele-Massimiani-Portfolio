@@ -12,17 +12,20 @@ export default function GameDesign() {
             <Row className='section mx-4 pt-3'>
                 <Col xs={12} sm={12} md={12} lg={4}>
                     <p className='p'>
-                    The university course Game Design and Gamification, taught by Marco Mazzaglia, allowed me to gain a deeper understanding of the video game industry and learn the basics of game design. 
-                    The goal of the course was to create a video game project, from the initial idea to economic sustainability. 
+                    The university course <b>Game Design and Gamification</b>, taught by <b>Marco Mazzaglia</b>, allowed me to gain a deeper understanding of the video game industry and learn the basics of game design. 
+                    <br/><br/>
+                    The goal of the course was to create a <b>video game project</b>, from the initial idea to economic sustainability. 
+                    <br/>
                     Therefore, together with a team of 6 people, we developed a video game prototype from the end of March to the end of July. 
-                    We also produced a Teaser Trailer and a Pitch document, following all the steps for technical, creative, and business realization.
+                    <br/>
+                    We also produced a <b>Teaser Trailer</b> and a <b>Pitch document</b>, following all the steps for technical, creative, and business realization.
                     </p>
                     <p className='p'>
                         Project products: <a href='https://drive.google.com/drive/folders/1xQgwhUWqW5u1B2fjd0F76i_cZb1jxiJW' className='aOtherPages'>Beyond The Shell</a>
                     </p>
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={8} >
-                <Carousel className="custom-carousel-dx">
+                <Carousel className="custom-carousel-dx-GD">
                     <Carousel.Item>
                         <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellMenu.png' alt='Level Up Lab Logo'/>
                     </Carousel.Item>
@@ -44,7 +47,7 @@ export default function GameDesign() {
             </Row>
             <Row className='section mx-4 pt-1'>
                 <Col xs={12} sm={12} md={12} lg={8}>
-                    <Carousel className="custom-carousel-sx">
+                    <Carousel className="custom-carousel-sx-GD">
                         <Carousel.Item>
                             <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellPT.png' alt='Level Up Lab Logo' />
                         </Carousel.Item>

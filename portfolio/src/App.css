@@ -350,7 +350,7 @@ body {
 
 .embededItch {
   width: 100%;
-  height: 167px;
+  height: 160px;
   border-radius: 8px;
 }
 
@@ -392,6 +392,37 @@ body {
   height: 90%;
 }
 
+.video-container-dx-GJ {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto; /* Center the container itself */
+}
+
+.video-container-sx-GJ {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto; /* Center the container itself */
+}
+
+.video-container-dx-GJ iframe,
+.video-container-sx-GJ iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .custom-carousel-dx {
   width: 80%;
   height: auto;
@@ -410,6 +441,28 @@ body {
 
 .custom-carousel-dx img,
 .custom-carousel-sx img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-carousel-dx-GD {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  float: right;
+}
+
+.custom-carousel-sx-GD {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  float: left;
+}
+
+.custom-carousel-dx-GD img,
+.custom-carousel-sx-GD img {
   width: 100%;
   height: auto;
 }
