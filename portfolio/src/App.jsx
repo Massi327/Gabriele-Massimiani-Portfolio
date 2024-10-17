@@ -109,22 +109,22 @@ function App() {
   ]
 
   const skillLogoUp = [
-    {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/unity-logo.png', alt: 'Unity'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/blender-logo.png', alt: 'Blender'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/csharp.png', alt: 'Csharp'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira', name:'Jira'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion', name:'Notion'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5', name:'Unreal Enginge 5'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/unity-logo.png', alt: 'Unity', name:'Unity'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/blender-logo.png', alt: 'Blender', name:'Blender'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C', name:'C'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/csharp.png', alt: 'Csharp', name:'C#'},
   ]
   
   const skillLogoDown = [
-    {src: '/Gabriele-Massimiani-Portfolio/assets/GitHub_Logo.png', alt: 'GitHub'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/react-logo.svg', alt: 'React'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/bootstrap-logo.svg', alt: 'Bootstrap'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/javascript-logo.svg', alt: 'Javascript'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/html-logo.svg', alt: 'HTML'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/css-logo.svg', alt: 'CSS'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/GitHub_Logo.png', alt: 'GitHub', name:'GitHub'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/react-logo.svg', alt: 'React', name:'React'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/bootstrap-logo.svg', alt: 'Bootstrap', name:'React Bootstrap'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/javascript-logo.svg', alt: 'Javascript', name:'Bootstrap'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/html-logo.svg', alt: 'HTML', name:'HTML'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/css-logo.svg', alt: 'CSS', name:'CSS'},
   ]
 
   const handleCardClick = (url) => {
@@ -189,36 +189,43 @@ function App() {
           
             
             {/*About*/}
+            <Row className='section mt-2'></Row>
             <Row className='section mt-5 mx-2'>
               <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
               <h2>Project Manager</h2>
             </Row>
-            <Row className='section mx-3 pt-1'>
+            <Row className='section mx-3 pt-3'>
               <p className='p'>
-              I am an university student at Politecnico di Torino, with a background in engineering and a deep passion for the gaming industry.
+                I am a university student at Politecnico di Torino, with a background in computer engineering and a deep passion for the gaming industry. Throughout my studies, I have gained experience in programming skills and have also explored areas like animation and 3D modeling.              
               </p>
               <p className='p'>
-              Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
+                Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
               </p>
               <p className='p'>
-              I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
+                I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
               </p>
               <p className='p'>
-              My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
+                My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
               </p>
               <p className='p'>
-              I am excited about the opportunity to contribute to your esteemed team!
+                What are you waiting for? Together, we can turn ideas into an amazing game!
               </p>
               
               <h2 className='mb-3 mt-3'>Skills & Tools</h2>
               <div className="skill-logo-container">
               {skillLogoUp.map((skillLogo, index) => (
-                <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+                <div key={index} className="skill-logo">
+                  <img src={skillLogo.src} alt={skillLogo.alt}/>
+                  <p className="skill-name">{skillLogo.name}</p>
+                </div>
               ))}
               </div>
               <div className="skill-logo-container">
               {skillLogoDown.map((skillLogo, index) => (
-                <img src={skillLogo.src} alt={skillLogo.alt} className="skill-logo" key={index}/>
+                <div key={index} className="skill-logo">
+                  <img src={skillLogo.src} alt={skillLogo.alt} />
+                  <p className="skill-name">{skillLogo.name}</p>
+                </div>
               ))}
               </div>
               <div id='projects'></div>
