@@ -111,7 +111,7 @@ function App() {
   const skillLogoUp = [
     {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira', name:'Jira'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion', name:'Notion'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5', name:'Unreal Enginge 5'},
+    {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5', name:'Unreal Engine 5'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/unity-logo.png', alt: 'Unity', name:'Unity'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/blender-logo.png', alt: 'Blender', name:'Blender'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C', name:'C'},
@@ -211,7 +211,7 @@ function App() {
                 What are you waiting for? Together, we can turn ideas into an amazing game!
               </p>
               
-              <h2 className='mb-3 mt-3'>Skills & Tools</h2>
+              <h2 className='mb-3 mt-3'>Tools & Software</h2>
               <div className="skill-logo-container">
               {skillLogoUp.map((skillLogo, index) => (
                 <div key={index} className="skill-logo">
