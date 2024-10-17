@@ -189,23 +189,23 @@ function App() {
           
             
             {/*About*/}
-            <Row className='section mt-2'></Row>
-            <Row className='section mt-5 mx-2'>
+            <Row className='section mt-5 mx-2 pt-4'>
               <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
               <h2>Project Manager</h2>
             </Row>
             <Row className='section mx-3 pt-3'>
               <p className='p'>
-                I am a university student at Politecnico di Torino, with a background in computer engineering and a deep passion for the gaming industry. Throughout my studies, I have gained experience in programming skills and have also explored areas like animation and 3D modeling.              
+                I am a university student at <b>Politecnico di Torino</b>, with a background in <b>computer engineering</b> and a deep passion for the gaming industry. 
+                Throughout my studies, I have gained experience in <b>programming</b> and have also explored areas like <b>animation</b> and <b>3D modeling</b>.              
               </p>
               <p className='p'>
-                Through my participation in various projects, I have gained experience in project coordination, time management, budget planning, and effective communication, all essential components of successful project management.
+                Through my participation in various projects, I have gained experience in <b>project coordination</b>, <b>time management</b>, <b>budget planning</b> and <b>effective communication</b>, all essential components of successful project management.
               </p>
               <p className='p'>
-                I am an organized, detail-oriented person who excels in teamwork. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
+                I am an organized, detail-oriented person who excels in <b>teamwork</b>. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
               </p>
               <p className='p'>
-                My goal is to work in the video game industry as a producer or project manager, where I can apply my skills to contribute to the development of innovative and impactful projects.
+                My goal is to work in the video game industry as a <b>producer</b> or <b>project manager</b>, where I can apply my skills to contribute to the development of innovative and impactful projects.
               </p>
               <p className='p'>
                 What are you waiting for? Together, we can turn ideas into an amazing game!

@@ -323,8 +323,8 @@ body {
 /* Other pages */
 
 .imgPageProjectDx {
-  width: 93%;
-  height: 93%;
+  width: 96%;
+  height: 96%;
   border-radius: 8px;
   overflow: hidden;
   float: right;
@@ -370,6 +370,8 @@ body {
   .embededItch {
     width: 208px;
     height: 167px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -377,10 +379,11 @@ body {
   display: flex;
   justify-content: end;
   align-items: start;
+  border-radius: 8px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   max-width: 100%;
-  border-radius: 8px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto; /* Center the container itself */
 }
@@ -393,6 +396,7 @@ body {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   max-width: 100%;
   border-radius: 8px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto; /* Center the container itself */
 }
@@ -400,18 +404,19 @@ body {
 .video-container-dx iframe,
 .video-container-sx iframe {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container-dx-GJ {
   display: flex;
   justify-content: end;
   align-items: start;
+  border-radius: 8px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   max-width: 100%;
-  border-radius: 8px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto; /* Center the container itself */
 }
@@ -421,9 +426,10 @@ body {
   justify-content: start;
   align-items: start;
   position: relative;
+  border-radius: 8px;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   max-width: 100%;
-  border-radius: 8px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto; /* Center the container itself */
 }
@@ -436,7 +442,7 @@ body {
 }
 
 .custom-carousel-dx {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   overflow: hidden;
@@ -475,6 +481,28 @@ body {
 
 .custom-carousel-dx-GD img,
 .custom-carousel-sx-GD img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-carousel-dx-VR {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  float: right;
+}
+
+.custom-carousel-sx-VR {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  float: left;
+}
+
+.custom-carousel-dx-VR img,
+.custom-carousel-sx-VR img {
   width: 100%;
   height: auto;
 }

@@ -42,11 +42,11 @@ export default function GameDesign() {
                 </Col>
             </Row>
 
-            <Row className='section mx-3 pt-1 mt-2'>
+            <Row className='section mx-3 pt-5'>
               <h2>Role & Structure</h2>
             </Row>
-            <Row className='section mx-4 pt-1'>
-                <Col xs={12} sm={12} md={12} lg={8}>
+            <Row className='section mx-4 pt-3'>
+                <Col xs={{ order: 2, span: 12 }} sm={{ order: 2, span: 12 }} md={12} lg={{ order: 1, span: 8 }} className='pb-3'>
                     <Carousel className="custom-carousel-sx-GD">
                         <Carousel.Item>
                             <img src='/Gabriele-Massimiani-Portfolio/assets/BeyondTheShellPT.png' alt='Level Up Lab Logo' />
@@ -62,28 +62,28 @@ export default function GameDesign() {
                         </Carousel.Item>
                     </Carousel>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={4}>
-                    <p className='p mt-2'>
-                    The ideation of Beyond The Shell was my first experience in video game creation.
+                <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 12 }} md={12} lg={{ order: 2, span: 4 }} className='pb-3'>
+                    <p className='p'>
+                    The ideation of <b>Beyond The Shell</b> was my first experience in video game creation.
                     <br/>
-                    My main tasks were project management and UI programming, but I also contributed to brainstorming the core mechanics during the initial idea phase.
+                    My main tasks were <b>project management</b> and <b>UI programming</b>, but I also contributed to brainstorming the <b>core mechanics</b> during the initial idea phase.
                     Regarding project management, I was responsible for dividing tasks, creating a work plan, and monitoring progress.
                     <br/><br/>
-                    I also developed a long-term project plan, which allowed me to schedule the development phases and have a clear idea of the timeline.
-                    This plan, along with a benchmark, helped me better understand the project's costs and the product's launch price, enabling us to request an appropriate budget during the pitch phase. 
+                    I also developed a <b>long-term project plan</b>, which allowed me to schedule the development phases and have a clear idea of the <b>timeline</b>.
+                    This plan, along with a benchmark, helped me better understand the <b>project's costs</b> and the <b>product's launch price</b>, enabling us to request an appropriate budget during the <b>pitch phase</b>. 
                     </p>
                 </Col>
             </Row>
-            <Row className='section mx-4 pt-1'>
+            <Row className='section mx-4'>
                 <Col xs={12} sm={12} md={12} lg={5}>
                     <p className='p'>
-                        I also programmed all the menus, the tutorial texts, the respawn system, the save and load system, and an entire game area.
+                        I also <b>programmed</b> all the menus, the tutorial texts, the respawn system, the save and load system, and an entire game area.
                         This area is a timed zone where players must collect objects and place them in the correct spots to unlock the power-up and then exit.
                         <br/><br/>
-                        Finally, I took care of the concept, creation, and editing of the Teaser Trailer.
+                        Finally, I took care of the concept, creation, and editing of the <b>Teaser Trailer</b>.
                         I initially created a storyboard based on the music and sounds from our sound designer.
                         <br/>
-                        I made most of the scenes in Blender, animating the camera and characters, while the lighting was a joint effort with another team member.
+                        I made most of the scenes in Blender, <b>animating</b> the camera and characters, while the lighting was a joint effort with another team member.
                         <br/>
                         The remaining scenes were captured directly in Unity.
                     </p>

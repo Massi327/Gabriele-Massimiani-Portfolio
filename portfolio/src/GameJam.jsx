@@ -7,11 +7,11 @@ export default function GameJam() {
             <Row className='section mt-5 mx-3 pt-4'>
               <h1><span className='red-text'>Game Jam</span></h1>
             </Row>
-            <Row className='section mx-3 pt-1 mt-2'>
+            <Row className='section mx-3 pt-3'>
               <h2>Global Game Jam 2024</h2>
             </Row>
             <Row className='section mx-4 pt-3'>
-                <Col xs={12} sm={12} md={12} lg={5}>
+                <Col xs={12} sm={12} md={12} lg={5} className='pb-3'>
                     <p className='p'>
                     In the <b>Global Game Jam 2024</b>, I collaborated with two other game designers on the <b>game's design</b> of <b>Clownageddon</b>. 
                     It was my first time stepping outside of my usual role to challenge myself and learn something new. 
@@ -20,7 +20,7 @@ export default function GameJam() {
                     </p>
                     <iframe src="https://itch.io/embed/2496957?bg_color=E1E2D0&amp;fg_color=101419&amp;link_color=D81919&amp;border_color=E1E2D0" className='embededItch'><a href="https://abstractborderstudio.itch.io/clownageddon">Clownageddon by AbstractBorderStudio, IlariaPasini, plummycake, nyolind, Gabriele Massimiani, Pietro</a></iframe>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={7}>
+                <Col xs={12} sm={12} md={12} lg={7} className='pb-5'>
                 <div className="video-container-dx-GJ">
                         <iframe 
                             src="https://www.youtube.com/embed/ZV5B9T892ec" 
@@ -32,11 +32,11 @@ export default function GameJam() {
                 </Col>
             </Row>
 
-            <Row className='section mx-3 pt-1 mt-2'>
+            <Row className='section mx-3'>
               <h2>Fail/Safe Game Jam 2023</h2>
             </Row>
             <Row className='section mx-4 pt-3'>
-                <Col xs={12} sm={12} md={12} lg={7}>
+                <Col xs={{ order: 2, span: 12 }} sm={{ order: 2, span: 12 }} md={12} lg={{ order: 1, span: 7 }}>
                 <div className="video-container-sx-GJ">
                     <iframe 
                         src="https://www.youtube.com/embed/gx0rGHIhqkE" 
@@ -44,8 +44,9 @@ export default function GameJam() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen
                     ></iframe>
-                </div>                    </Col>
-                <Col xs={12} sm={12} md={12} lg={5}>
+                </div>                    
+                </Col>
+                <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 12 }} md={12} lg={{ order: 2, span: 5 }} className='pb-3'>
                     <p className='p'>
                     The <b>Fail/Safe Game Jam 2023</b>, organized by <b>IGDA Italy</b>, was my first experience participating in a game jam. <br />
                     I focused primarily on <b>programming</b> the UI and menus of <b>Line Spacing</b>. 
