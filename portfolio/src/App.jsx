@@ -15,6 +15,9 @@ import Badge from 'react-bootstrap/Badge';
 import Spinner from 'react-bootstrap/Spinner';
 import { PDFViewer } from '@react-pdf/renderer';
 import MyDocument from './Pdf';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 function App() {
 
