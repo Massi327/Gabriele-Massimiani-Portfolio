@@ -30,7 +30,7 @@ function App() {
     {
       title: (
         <>
-          Level Up Lab <br/> (2024)
+          Level Up Lab <br/> (2025 - 2024)
         </>
       ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/LUL_FROG_Complete_Name.png',
@@ -45,7 +45,7 @@ function App() {
     {
       title: (
       <>
-        Game Jam <br/> (2025/2024)
+        Game Jam <br/> (2025 - 2023)
       </>
     ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/GlobalGameJamLogo.png', 
@@ -179,7 +179,7 @@ function App() {
               <img src='/Gabriele-Massimiani-Portfolio/assets/Linkedin logo.png' alt="LinkedIn" className="footer-logo" />
               LinkedIn
               </a>
-              <span className='footer-text'>© 2024 Gabriele Massimiani</span>
+              <span className='footer-text'>© 2025 Gabriele Massimiani</span>
             </div>
           </footer>
         </Container>
