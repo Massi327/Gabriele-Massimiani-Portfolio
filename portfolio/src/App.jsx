@@ -45,15 +45,14 @@ function App() {
     {
       title: (
       <>
-        Game Jam <br/> (2023/2024)
+        Game Jam <br/> (2025/2024)
       </>
     ), 
       img: '/Gabriele-Massimiani-Portfolio/assets/GlobalGameJamLogo.png', 
       url: '/GameJam',
       description: (
         <>
-        In 2023, I participated in the <b> Fail/Safe Game Jam </b> as a <b>UI Programmer.</b> <br/> <br/> 
-        In 2024, I took part in the <b> Global Game Jam </b> as both a <b> Game Designer </b> and <b> UI Programmer. </b>
+        In 2025 and in 2024, I took part in the <b> Global Game Jam </b> as <b> Game Designer </b>, <b>Project Manager</b> and <b> UI Programmer. </b>
         </>
       )
     },
@@ -198,11 +197,11 @@ function App() {
             </Row>
             <Row className='section mx-3 pt-3'>
               <p className='p'>
-                I am a university student at <b>Politecnico di Torino</b>, with a background in <b>computer engineering</b> and a deep passion for the gaming industry. 
+              I'm a junior developer and I’m a recently graduated at <b>Politecnico di Torino</b>, with a background in <b>computer engineering</b> and a deep passion for the gaming industry. 
                 Throughout my studies, I have gained experience in <b>programming</b> and have also explored areas like <b>animation</b> and <b>3D modeling</b>.              
               </p>
               <p className='p'>
-                Through my participation in various projects, I have gained experience in <b>project coordination</b>, <b>time management</b>, <b>budget planning</b> and <b>effective communication</b>, all essential components of successful project management.
+                Through my participation in various projects and as a <b>co-founder</b> of a <b>student game development team</b>, I have gained experience in <b>project coordination</b>, <b>time management</b>, <b>budget planning</b> and <b>effective communication</b>, all essential components of successful project management.
               </p>
               <p className='p'>
                 I am an organized, detail-oriented person who excels in <b>teamwork</b>. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
