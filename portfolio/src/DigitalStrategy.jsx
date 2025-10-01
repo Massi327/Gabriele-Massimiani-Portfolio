@@ -49,7 +49,7 @@ export default function DigitalStrategy() {
                 </Col>
                 <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 12 }} md={12} lg={{ order: 2, span: 4 }} className='pb-3'>
                     <p className='p'>
-                        In the initial phase of the project, I focused on <b>analyzing a competitor</b> of Dramatic Iceberg, <b>Ratloop Games Canada</b>, a video game company.
+                        In the initial phase of the project, I focused on <b>analyzing a competitor of Dramatic Iceberg</b>, a video game company.
                         <br/><br/>
                         I started with organic research and an analysis of their <b>Google My Business</b> profile, then moved on to review their <b>website</b> and <b>social media</b>, suggesting improvements for certain aspects.
                         <br/>
