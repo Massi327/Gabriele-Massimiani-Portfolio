@@ -111,12 +111,12 @@ function App() {
   ]
 
   const skillLogoUp = [
+    {src: '/Gabriele-Massimiani-Portfolio/assets/ClickUp-logo.png', alt: 'ClickUp', name:'ClickUp'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/mark-gradient-blue-jira.svg', alt: 'Jira', name:'Jira'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/notion-logo.png', alt: 'Notion', name:'Notion'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/unreal-engine-logo.png', alt: 'UE5', name:'Unreal Engine 5'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/unity-logo.png', alt: 'Unity', name:'Unity'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/blender-logo.png', alt: 'Blender', name:'Blender'},
-    {src: '/Gabriele-Massimiani-Portfolio/assets/c-logo.svg', alt: 'C', name:'C'},
     {src: '/Gabriele-Massimiani-Portfolio/assets/csharp.png', alt: 'Csharp', name:'C#'},
   ]
   
@@ -193,26 +193,23 @@ function App() {
             {/*About*/}
             <Row className='section mt-5 mx-2 pt-4'>
               <h1>Hi, I'm <span className='red-text'>Gabriele Massimiani!</span></h1>
-              <h2>Project Manager</h2>
+              <h2>Producer at Febucci</h2>
             </Row>
             <Row className='section mx-3 pt-3'>
               <p className='p'>
-              I'm a junior developer and I’m a recently graduated at <b>Politecnico di Torino</b>, with a background in <b>computer engineering</b> and a deep passion for the gaming industry. 
-                Throughout my studies, I have gained experience in <b>programming</b> and have also explored areas like <b>animation</b> and <b>3D modeling</b>.              
+                <b>Junior Producer</b> & Social Media Manager at Febucci, where I help the team stay <b>aligned, motivated, and focused on delivering 
+                strong results</b> while continuously improving the production workflow.
               </p>
               <p className='p'>
-                Through my participation in various projects and as a <b>co-founder</b> of a <b>student game development team</b>, I have gained experience in <b>project coordination</b>, <b>time management</b>, <b>budget planning</b> and <b>effective communication</b>, all essential components of successful project management.
+                I am also a <b>game developer</b> with a background in programming, animation, and 3D modeling, developed during my studies 
+                at <b>Politecnico di Torino</b>. This versatility naturally brings me to work on UI and Main Menu programming during game jams.
               </p>
               <p className='p'>
-                I am an organized, detail-oriented person who excels in <b>teamwork</b>. I prioritize tasks effectively, adapt well to change, and I am committed to delivering high-quality results while seeking continuous growth.
+                I was the <b>Co-Founder and General Project Manager of Level Up Lab</b>, the first Student Game Development Team at Politecnico di Torino. 
+                Leading a 50-people team organized into 5 groups and managed through Jira was an intense and formative experience that shaped my approach to <b>leadership, 
+                collaboration, and project management</b>.
               </p>
-              <p className='p'>
-                My goal is to work in the video game industry as a <b>producer</b> or <b>project manager</b>, where I can apply my skills to contribute to the development of innovative and impactful projects.
-              </p>
-              <p className='p'>
-                What are you waiting for? Together, we can turn ideas into an amazing game!
-              </p>
-              
+                            
               <h2 className='mb-3 mt-3'>Tools & Software</h2>
               <div className="skill-logo-container">
               {skillLogoUp.map((skillLogo, index) => (
